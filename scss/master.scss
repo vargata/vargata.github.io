@@ -1,3 +1,61 @@
+@import '_declarations';
+
 * {
 	margin: 0;
+	padding: 0;
+}
+
+.main_header{
+	@extend %bg_white;
+}
+
+.page_wrap{
+	height: 100vh;
+	border: 1px solid red;
+}
+
+.carousel_header{
+	height: 577px;
+	background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 60%);
+	background-blend-mode: multiply;
+}
+
+.carousel_content{
+	width: 940px;
+	margin: auto;
+}
+
+.carousel_heading{
+	color: white;
+	font-size: 4rem;
+	line-height: 5rem;
+	font-family: Poppins,sans-serif;
+}
+
+.carousel_paragraph{
+	color: white;
+	font-size: 1.625rem;
+	line-height: 2rem;
+	font-weight: 600;
+	padding-bottom: 2rem;
+	font-family: Poppins,sans-serif;
+}
+
+.fom_button{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 20px monospace;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	width: fit-content;
+	background-color: #926fb1;
+	border-radius: 2px;
+	&::after{
+		content: "\00a0\2192";
+	}
+	&:hover{
+		background-color: darken(#926fb1, 3%);
+	}
 }
