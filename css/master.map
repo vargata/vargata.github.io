@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "master.css",
+	"sources": [
+		"../scss/master.scss"
+	],
+	"sourcesContent": [
+		"* {\r\n\tmargin: 0;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAC;CACT"
+}
