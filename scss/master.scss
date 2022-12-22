@@ -4,6 +4,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Poppins,sans-serif;;
+	
+	a,
+	a:visited,
+	a:active{	
+		text-decoration: none;
+		color:white;
+	}
 }
 
 .page_wrap{
@@ -13,7 +21,7 @@
 .carousel_header{
 	background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 60%);
 	background-blend-mode: multiply;
-	height: 60vh;
+	height: 80vh;
 }
 
 .carousel_content_container{
@@ -23,7 +31,6 @@
 
 	.contact_button{
 		display: inline-block;
-		text-decoration: none;
 		text-transform: uppercase;
 		font-family: Poppins,sans-serif;
 		letter-spacing: .4px;
@@ -71,23 +78,86 @@
 		background-color: nth($menu_bg_colors, $i);
 		position: absolute;
 		left: 0px;
+		text-align: left;
+		padding: 3rem;
+		text-transform: capitalize;
 		
-		&:hover{
-			display: block;
+		a:hover{
+			text-decoration: underline;
+		}
+		
+		ul {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			
+			li{
+				display: inline-block;
+				width: 30%;
+				
+				span{					
+					display: table-cell;
+					height: 4rem;
+					vertical-align: middle;
+					
+					&:first-child(){
+						width:40px;
+					}
+					
+					&:last-child(){
+						padding: 0px 20px 0px 0px;
+					}
+				}
+			}
 		}
 
-		.sec_button#{$i}:hover ~ &{
+		.sec_button#{$i}:hover &{
 			display: block;
 		}
-	}		
+	}
+	
+	.arrow_div#{$i}{
+		width: 0;
+	    height: 0;
+	    border-left: 60px solid transparent;
+	    border-right: 60px solid transparent;
+	    border-top: 30px solid lighten(nth($menu_bg_colors, $i), 10%);	
+	    display: none;
+	    position: absolute;
+	    z-index: 1;
+	    
+	    .sec_button#{$i}:hover &{
+			display: block;
+		}
+	}
+	
 	.sec_button#{$i}{
-		padding: 5px;
 		color: white;
 		text-transform: uppercase;
+		width:120px;
+		font-size: 18px;
+		
+		.small_text{
+			font-size: 10px;
+			line-height:  10px;;
+		}
 	}
+	
+	.fa-icon#{$i}{
+		color: lighten(nth($menu_bg_colors, $i), 10%);
+		
+		.sec_button#{$i}:hover &{
+			color: white;
+		}
+	}
+	
 	.sec_button#{$i}:hover{
-		background-color: nth($menu_bg_colors, $i);
+		background-color: lighten(nth($menu_bg_colors, $i), 10%);
 	}
+}
+
+.sec_button_text{
+	padding: 20px 0px;
 }
 
 .sec_button_container{
@@ -96,10 +166,16 @@
 
 .sec_button_list{
 	background-color: #333645;
+	display: flex;
+	justify-content: center;
 	
 	li{
-		display: inline-block;
+		display: block;
 	}
+}
+
+.top_button_container{
+	height:30%;;
 }
 
 .top_buttons_list{
@@ -108,4 +184,8 @@
 	li{
 		display: inline-block;
 	}
+}
+
+.hidden_menu_header{
+	margin: 0 0 2rem 0;
 }
