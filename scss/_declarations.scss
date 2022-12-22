@@ -1,4 +1,13 @@
-%bg_white{
-	background-color: #fff;
+$menu_bg_colors:
+	#526781,
+	#286abd,
+	#25a25a,
+	#bc2c28,
+	#79539a,
+	#de093f,
+	#a3331d;
+
+%hidden_menu_content{
 	width: 100vw;
+	display: none;
 }

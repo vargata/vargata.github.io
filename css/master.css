@@ -1,57 +1,43 @@
-/* line 1, ../../../../xampp/htdocs/netmatters1/scss/_declarations.scss */
-.main_header {
-  background-color: #fff;
+/* line 10, ../../../../xampp/htdocs/netmatters1/scss/_declarations.scss */
+.sec_menu_content1, .sec_menu_content2, .sec_menu_content3, .sec_menu_content4, .sec_menu_content5, .sec_menu_content6, .sec_menu_content7 {
   width: 100vw;
+  display: none;
 }
 
 /* line 3, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* line 12, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+/* line 9, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .page_wrap {
-  height: 100vh;
-  border: 1px solid red;
+  height: 100%;
 }
 
-/* line 17, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+/* line 13, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .carousel_header {
-  height: 577px;
   background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 60%);
   background-blend-mode: multiply;
+  height: 60vh;
 }
 
-/* line 23, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_content {
-  width: 940px;
+/* line 19, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_content_container {
+  width: 90vw;
   margin: auto;
+  padding: 4rem 1rem;
 }
 
-/* line 28, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_heading {
-  color: white;
-  font-size: 4rem;
-  line-height: 5rem;
-  font-family: Poppins,sans-serif;
-}
-
-/* line 35, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_paragraph {
-  color: white;
-  font-size: 1.625rem;
-  line-height: 2rem;
-  font-weight: 600;
-  padding-bottom: 2rem;
-  font-family: Poppins,sans-serif;
-}
-
-/* line 44, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.fom_button {
+/* line 24, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_content_container .contact_button {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: Poppins,sans-serif;
+  letter-spacing: .4px;
+  font-weight: 400;
   font: 20px monospace;
   color: white;
   text-align: center;
@@ -61,14 +47,266 @@
   border-radius: 2px;
 }
 
-/* line 55, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.fom_button::after {
+/* line 38, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_content_container .contact_button::after {
   content: "\00a0\2192";
 }
 
-/* line 58, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.fom_button:hover {
+/* line 41, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_content_container .contact_button:hover {
   background-color: #8a65ac;
+}
+
+/* line 47, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_heading {
+  color: white;
+  font-size: 4rem;
+  line-height: 5rem;
+  font-family: Poppins,sans-serif;
+}
+
+/* line 54, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.carousel_paragraph {
+  color: white;
+  font-size: 1.625rem;
+  line-height: 2rem;
+  font-weight: 600;
+  padding: 2rem 0;
+  font-family: Poppins,sans-serif;
+}
+
+/* line 63, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.hidden_menu_header {
+  font-size: 32px;
+  color: white;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content1 {
+  background-color: #526781;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content1:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button1:hover ~ .sec_menu_content1 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button1 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button1:hover {
+  background-color: #526781;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content2 {
+  background-color: #286abd;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content2:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button2:hover ~ .sec_menu_content2 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button2 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button2:hover {
+  background-color: #286abd;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content3 {
+  background-color: #25a25a;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content3:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button3:hover ~ .sec_menu_content3 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button3 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button3:hover {
+  background-color: #25a25a;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content4 {
+  background-color: #bc2c28;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content4:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button4:hover ~ .sec_menu_content4 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button4 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button4:hover {
+  background-color: #bc2c28;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content5 {
+  background-color: #79539a;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content5:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button5:hover ~ .sec_menu_content5 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button5 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button5:hover {
+  background-color: #79539a;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content6 {
+  background-color: #de093f;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content6:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button6:hover ~ .sec_menu_content6 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button6 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button6:hover {
+  background-color: #de093f;
+}
+
+/* line 69, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content7 {
+  background-color: #a3331d;
+  position: absolute;
+  left: 0px;
+}
+
+/* line 75, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_menu_content7:hover {
+  display: block;
+}
+
+/* line 79, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button7:hover ~ .sec_menu_content7 {
+  display: block;
+}
+
+/* line 83, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button7 {
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 88, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button7:hover {
+  background-color: #a3331d;
+}
+
+/* line 93, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button_container {
+  text-align: center;
+}
+
+/* line 97, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button_list {
+  background-color: #333645;
+}
+
+/* line 100, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.sec_button_list li {
+  display: inline-block;
+}
+
+/* line 105, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.top_buttons_list {
+  display: inline-block;
+}
+
+/* line 108, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+.top_buttons_list li {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=master.css.map */
