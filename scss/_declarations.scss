@@ -11,3 +11,16 @@ $menu_bg_colors:
 	width: 100vw;
 	display: none;
 }
+
+%button{
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: Poppins,sans-serif;
+	letter-spacing: .4px;
+	font-weight: 400;
+	font: 20px monospace;
+	color: white;
+	text-align: center;
+	width: fit-content;
+	border-radius: 3px;	
+}

@@ -1,46 +1,9 @@
-/* line 10, ../../../../xampp/htdocs/netmatters1/scss/_declarations.scss */
 .sec_menu_content1, .sec_menu_content2, .sec_menu_content3, .sec_menu_content4, .sec_menu_content5, .sec_menu_content6, .sec_menu_content7 {
   width: 100vw;
   display: none;
 }
 
-/* line 3, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Poppins,sans-serif;
-}
-
-/* line 9, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-* a,
-* a:visited,
-* a:active {
-  text-decoration: none;
-  color: white;
-}
-
-/* line 17, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.page_wrap {
-  height: 100%;
-}
-
-/* line 21, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_header {
-  background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 60%);
-  background-blend-mode: multiply;
-  height: 80vh;
-}
-
-/* line 27, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_content_container {
-  width: 90vw;
-  margin: auto;
-  padding: 4rem 1rem;
-}
-
-/* line 32, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_content_container .contact_button {
+.carousel_content_container .contact_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -49,23 +12,57 @@
   font: 20px monospace;
   color: white;
   text-align: center;
-  padding: 20px;
   width: fit-content;
+  border-radius: 3px;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins,sans-serif;
+}
+
+* a,
+* a:visited,
+* a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.page_wrap {
+  height: 100%;
+}
+
+.carousel_header {
+  background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 60%);
+  background-blend-mode: multiply;
+  height: 80vh;
+}
+
+.carousel_content_container {
+  width: 90vw;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+
+.carousel_content_container .contact_button {
+  padding: 20px;
   background-color: #926fb1;
-  border-radius: 2px;
 }
 
-/* line 45, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
-.carousel_content_container .contact_button::after {
-  content: "\00a0\2192";
-}
-
-/* line 48, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .carousel_content_container .contact_button:hover {
   background-color: #8a65ac;
 }
 
-/* line 54, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .carousel_heading {
   color: white;
   font-size: 4rem;
@@ -73,7 +70,6 @@
   font-family: Poppins,sans-serif;
 }
 
-/* line 61, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .carousel_paragraph {
   color: white;
   font-size: 1.625rem;
@@ -83,13 +79,11 @@
   font-family: Poppins,sans-serif;
 }
 
-/* line 70, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .hidden_menu_header {
   font-size: 32px;
   color: white;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 {
   background-color: #526781;
   position: absolute;
@@ -99,47 +93,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content1 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button1:hover .sec_menu_content1 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div1 {
   width: 0;
   height: 0;
@@ -151,41 +137,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div1 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button1:hover .arrow_div1 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button1 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button1 {
+    width: 160px;
+  }
+}
+
 .sec_button1 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon1 {
   color: #67809f;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button1:hover .fa-icon1 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button1:hover {
   background-color: #67809f;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 {
   background-color: #286abd;
   position: absolute;
@@ -195,47 +188,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content2 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button2:hover .sec_menu_content2 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div2 {
   width: 0;
   height: 0;
@@ -247,41 +232,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div2 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button2:hover .arrow_div2 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button2 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button2 {
+    width: 160px;
+  }
+}
+
 .sec_button2 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon2 {
   color: #4183d7;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button2:hover .fa-icon2 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button2:hover {
   background-color: #4183d7;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 {
   background-color: #25a25a;
   position: absolute;
@@ -291,47 +283,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content3 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button3:hover .sec_menu_content3 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div3 {
   width: 0;
   height: 0;
@@ -343,41 +327,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div3 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button3:hover .arrow_div3 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button3 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button3 {
+    width: 160px;
+  }
+}
+
 .sec_button3 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon3 {
   color: #2ecc71;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button3:hover .fa-icon3 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button3:hover {
   background-color: #2ecc71;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 {
   background-color: #bc2c28;
   position: absolute;
@@ -387,47 +378,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content4 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button4:hover .sec_menu_content4 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div4 {
   width: 0;
   height: 0;
@@ -439,41 +422,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div4 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button4:hover .arrow_div4 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button4 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button4 {
+    width: 160px;
+  }
+}
+
 .sec_button4 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon4 {
   color: #d64541;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button4:hover .fa-icon4 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button4:hover {
   background-color: #d64541;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 {
   background-color: #79539a;
   position: absolute;
@@ -483,47 +473,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content5 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button5:hover .sec_menu_content5 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div5 {
   width: 0;
   height: 0;
@@ -535,41 +517,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div5 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button5:hover .arrow_div5 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button5 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button5 {
+    width: 160px;
+  }
+}
+
 .sec_button5 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon5 {
   color: #926fb1;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button5:hover .fa-icon5 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button5:hover {
   background-color: #926fb1;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 {
   background-color: #de093f;
   position: absolute;
@@ -579,47 +568,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content6 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button6:hover .sec_menu_content6 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div6 {
   width: 0;
   height: 0;
@@ -631,41 +612,48 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div6 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button6:hover .arrow_div6 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button6 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button6 {
+    width: 160px;
+  }
+}
+
 .sec_button6 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon6 {
   color: #f62459;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button6:hover .fa-icon6 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button6:hover {
   background-color: #f62459;
 }
 
-/* line 76, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 {
   background-color: #a3331d;
   position: absolute;
@@ -675,47 +663,39 @@
   text-transform: capitalize;
 }
 
-/* line 85, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 94, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 98, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 ul li span {
   display: table-cell;
   height: 4rem;
   vertical-align: middle;
 }
 
-/* line 103, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 ul li span:first-child {
   width: 40px;
 }
 
-/* line 107, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_menu_content7 ul li span:last-child {
   padding: 0px 20px 0px 0px;
 }
 
-/* line 114, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button7:hover .sec_menu_content7 {
   display: block;
 }
 
-/* line 119, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .arrow_div7 {
   width: 0;
   height: 0;
@@ -727,80 +707,195 @@
   z-index: 1;
 }
 
-/* line 129, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .arrow_div7 {
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+  }
+}
+
 .sec_button7:hover .arrow_div7 {
   display: block;
 }
 
-/* line 134, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button7 {
   color: white;
   text-transform: uppercase;
   width: 120px;
   font-size: 18px;
+  line-height: 18px;
 }
 
-/* line 140, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (min-width: 1260px) {
+  .sec_button7 {
+    width: 160px;
+  }
+}
+
 .sec_button7 .small_text {
   font-size: 10px;
   line-height: 10px;
 }
 
-/* line 146, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .fa-icon7 {
   color: #ce4125;
 }
 
-/* line 149, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button7:hover .fa-icon7 {
   color: white;
 }
 
-/* line 154, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button7:hover {
   background-color: #ce4125;
 }
 
-/* line 159, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button_text {
   padding: 20px 0px;
 }
 
-/* line 163, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button_container {
   text-align: center;
 }
 
-/* line 167, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
+@media (max-width: 990px) {
+  .sec_button_container {
+    display: none;
+  }
+}
+
 .sec_button_list {
   background-color: #333645;
   display: flex;
   justify-content: center;
 }
 
-/* line 172, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .sec_button_list li {
   display: block;
 }
 
-/* line 177, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .top_button_container {
   height: 30%;
 }
 
-/* line 181, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .top_buttons_list {
   display: inline-block;
 }
 
-/* line 184, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .top_buttons_list li {
   display: inline-block;
 }
 
-/* line 189, ../../../../xampp/htdocs/netmatters1/scss/master.scss */
 .hidden_menu_header {
   margin: 0 0 2rem 0;
 }
 
-/*# sourceMappingURL=master.css.map */
+.top_buttons_container {
+  list-style-type: none;
+  display: flex;
+  width: 750px;
+  margin: 20px auto;
+}
+
+@media (min-width: 990px) {
+  .top_buttons_container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .top_buttons_container {
+    width: 1200px;
+  }
+}
+
+.top_buttons_container li:first-child {
+  margin-right: auto;
+  width: 374px;
+  height: 65px;
+}
+
+.top_buttons_container li:first-child img {
+  width: 100%;
+}
+
+.top_buttons_container .contact_button {
+  padding: 15px 20px;
+  margin: 5px 10px;
+  background-color: #999aa2;
+}
+
+@media (max-width: 990px) {
+  .top_buttons_container .contact_button {
+    display: none;
+  }
+}
+
+.top_buttons_container .contact_button:hover {
+  background-color: #91929b;
+}
+
+.top_buttons_container .support_button {
+  padding: 15px 20px;
+  margin: 5px 10px;
+  background-color: #4183d7;
+}
+
+@media (max-width: 990px) {
+  .top_buttons_container .support_button {
+    display: none;
+  }
+}
+
+.top_buttons_container .support_button:hover {
+  background-color: #347bd4;
+}
+
+.top_buttons_container .menu_button {
+  padding: 15px 20px;
+  margin: 5px 10px;
+  background-color: #080808;
+}
+
+.top_buttons_container .menu_button:hover {
+  background-color: #000000;
+}
+
+.top_buttons_container .search_menu {
+  margin: 0px 10px;
+}
+
+.top_buttons_container .search_button {
+  padding: 15px 20px;
+  margin: 5px 0px;
+  background-color: #999aa2;
+}
+
+.top_buttons_container .search_button:hover {
+  background-color: #91929b;
+}
+
+.top_buttons_container .search_field {
+  display: none;
+  padding: 5px 15px;
+  height: 42px;
+  width: 208px;
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 990px), (min-width: 1260px) {
+  .top_buttons_container .search_field {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 990px) {
+  .top_buttons_container .search_field {
+    width: 140px;
+  }
+}
+
+.top_buttons_container .search_field:focus {
+  border: 1px solid lightgray;
+  outline: none;
+  box-shadow: 0px 0px 10px 1px rgba(80, 200, 255, 0.8);
+}

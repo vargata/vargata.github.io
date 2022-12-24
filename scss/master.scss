@@ -1,9 +1,17 @@
 @import '_declarations';
 
+.debug{
+	border: 1px solid red;
+}
+
+.icons{
+	width:25px;
+	height:25px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font-family: Poppins,sans-serif;;
 	
 	a,
@@ -29,22 +37,10 @@
 	margin: auto;
 	padding: 4rem 1rem;
 
-	.contact_button{
-		display: inline-block;
-		text-transform: uppercase;
-		font-family: Poppins,sans-serif;
-		letter-spacing: .4px;
-		font-weight: 400;
-		font: 20px monospace;
-		color: white;
-		text-align: center;
+	& .contact_button{
+		@extend %button;
 		padding: 20px;
-		width: fit-content;
 		background-color: #926fb1;
-		border-radius: 2px;
-		&::after{
-			content: "\00a0\2192";
-		}
 		&:hover{
 			background-color: darken(#926fb1, 3%);
 		}
@@ -121,6 +117,10 @@
 	    height: 0;
 	    border-left: 60px solid transparent;
 	    border-right: 60px solid transparent;
+	    @media (min-width: 1260px){
+	    	border-left: 80px solid transparent;
+	    	border-right: 80px solid transparent;
+	    }
 	    border-top: 30px solid lighten(nth($menu_bg_colors, $i), 10%);	
 	    display: none;
 	    position: absolute;
@@ -134,9 +134,12 @@
 	.sec_button#{$i}{
 		color: white;
 		text-transform: uppercase;
-		width:120px;
+		width: 120px;
+		@media (min-width: 1260px){
+			width: 160px;
+		}
 		font-size: 18px;
-		
+		line-height: 18px;
 		.small_text{
 			font-size: 10px;
 			line-height:  10px;;
@@ -162,6 +165,9 @@
 
 .sec_button_container{
 	text-align: center;
+	@media (max-width: 990px){
+		display: none;
+	}
 }
 
 .sec_button_list{
@@ -188,4 +194,94 @@
 
 .hidden_menu_header{
 	margin: 0 0 2rem 0;
+}
+
+.top_buttons_container{
+	list-style-type: none;
+	display: flex;	
+	width: 750px;
+	@media (min-width:990px){
+		width: 970px;
+	}
+	@media (min-width: 1260px){		
+		width: 1200px;	
+	}
+	margin: 20px auto;
+	li:first-child(){
+		margin-right: auto;
+		width: 374px;
+		height: 65px;
+		img{
+			width: 100%;
+		}
+	}
+	
+	.contact_button{
+		@media (max-width: 990px){
+			display: none;
+		}
+		@extend %button;
+		padding: 15px 20px;
+		margin: 5px 10px;
+		background-color: #999aa2;
+		&:hover{
+			background-color: darken(#999aa2, 3%);
+		}
+	}
+	
+	.support_button{
+		@media (max-width: 990px){
+			display: none;
+		}
+		@extend %button;
+		padding: 15px 20px;
+		margin: 5px 10px;
+		background-color: #4183d7;
+		&:hover{
+			background-color: darken(#4183d7, 3%);
+		}
+	}
+	
+	.menu_button{
+		@extend %button;
+		padding: 15px 20px;
+		margin: 5px 10px;
+		background-color: lighten(#000000, 3%);
+		&:hover{
+			background-color: #000000;
+		}
+	}
+	
+	.search_menu{
+		margin: 0px 10px;
+	}
+	
+	.search_button{
+		@extend %button;
+		padding: 15px 20px;
+		margin: 5px 0px;
+		background-color: #999aa2;
+		&:hover{
+			background-color: darken(#999aa2, 3%);
+		}
+	}
+
+	.search_field{
+		display: none;
+		@media (max-width:990px), (min-width: 1260px){
+			display: inline-block;
+		}
+		padding: 5px 15px;
+		height: 42px;		
+		width: 208px;
+		@media (max-width:990px){
+			width: 140px;
+		}
+		border: 1px solid lightgray;
+		&:focus{
+			border: 1px solid lightgray;
+			outline: none;
+			box-shadow: 0px 0px 10px 1px rgba(rgb(80, 200, 255), 0.8);
+		}
+	}
 }
