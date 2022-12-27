@@ -1351,6 +1351,233 @@
   background-color: #0077b5;
 }
 
+.client_logo_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  .client_logo_container {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .client_logo_container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 990px) {
+  .client_logo_container {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .client_logo_container {
+    width: 1170px;
+  }
+}
+
+.client_logo_container .client_logo1 {
+  display: block;
+  padding: 0px 20px;
+}
+
+.client_logo_container .client_logo1 img {
+  width: 100%;
+}
+
+.client_logo_container .client_logo1 img:first-child {
+  display: block;
+}
+
+.client_logo_container .client_logo1:hover img:first-child {
+  display: none;
+}
+
+.client_logo_container .client_logo1 img:last-child {
+  display: none;
+}
+
+.client_logo_container .client_logo1:hover img:last-child {
+  display: block;
+}
+
+.client_logo_container .client_logo1 .hidden_content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo1:hover .hidden_content {
+  display: block;
+}
+
+.client_logo_container .client_logo1 .triangle {
+  position: absolute;
+  border-style: solid;
+  border: 20px 30px 0px 30px;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo1:hover .triangle {
+  display: block;
+}
+
+.client_logo_container .client_logo2 {
+  display: block;
+  padding: 0px 20px;
+}
+
+.client_logo_container .client_logo2 img {
+  width: 100%;
+}
+
+.client_logo_container .client_logo2 img:first-child {
+  display: block;
+}
+
+.client_logo_container .client_logo2:hover img:first-child {
+  display: none;
+}
+
+.client_logo_container .client_logo2 img:last-child {
+  display: none;
+}
+
+.client_logo_container .client_logo2:hover img:last-child {
+  display: block;
+}
+
+.client_logo_container .client_logo2 .hidden_content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo2:hover .hidden_content {
+  display: block;
+}
+
+.client_logo_container .client_logo2 .triangle {
+  position: absolute;
+  border-style: solid;
+  border: 20px 30px 0px 30px;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo2:hover .triangle {
+  display: block;
+}
+
+.client_logo_container .client_logo3 {
+  display: block;
+  padding: 0px 20px;
+}
+
+.client_logo_container .client_logo3 img {
+  width: 100%;
+}
+
+.client_logo_container .client_logo3 img:first-child {
+  display: block;
+}
+
+.client_logo_container .client_logo3:hover img:first-child {
+  display: none;
+}
+
+.client_logo_container .client_logo3 img:last-child {
+  display: none;
+}
+
+.client_logo_container .client_logo3:hover img:last-child {
+  display: block;
+}
+
+.client_logo_container .client_logo3 .hidden_content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo3:hover .hidden_content {
+  display: block;
+}
+
+.client_logo_container .client_logo3 .triangle {
+  position: absolute;
+  border-style: solid;
+  border: 20px 30px 0px 30px;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo3:hover .triangle {
+  display: block;
+}
+
+.client_logo_container .client_logo4 {
+  display: block;
+  padding: 0px 20px;
+}
+
+.client_logo_container .client_logo4 img {
+  width: 100%;
+}
+
+.client_logo_container .client_logo4 img:first-child {
+  display: block;
+}
+
+.client_logo_container .client_logo4:hover img:first-child {
+  display: none;
+}
+
+.client_logo_container .client_logo4 img:last-child {
+  display: none;
+}
+
+.client_logo_container .client_logo4:hover img:last-child {
+  display: block;
+}
+
+.client_logo_container .client_logo4 .hidden_content {
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo4:hover .hidden_content {
+  display: block;
+}
+
+.client_logo_container .client_logo4 .triangle {
+  position: absolute;
+  border-style: solid;
+  border: 20px 30px 0px 30px;
+  background-color: #333645;
+  display: none;
+}
+
+.client_logo_container .client_logo4:hover .triangle {
+  display: block;
+}
+
 .icons {
   width: 25px;
   height: 25px;
@@ -1371,4 +1598,8 @@
 
 body {
   min-width: 320px;
+}
+
+.page_wrap {
+  width: 100%;
 }

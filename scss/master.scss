@@ -4,6 +4,7 @@
 @import 'topmenu';
 @import 'newsletter';
 @import 'pagefooter';
+@import 'logos';
 
 .icons{
 	width:25px;
@@ -26,3 +27,7 @@
 body{
 	min-width: 320px;
 } 
+
+.page_wrap{
+	width: 100%;
+}
