@@ -10,16 +10,25 @@
 		<script src="https://kit.fontawesome.com/a74776b808.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<!--Top menus-->
+		<!-- Top menus -->
 		<header class="main_header">
 			<!--  header -->
-			<ul class="top_buttons_container">
-				<li><a href="#"><img src="img/f-logo.png" /></a></li>
-				<li><a href="#" class="support_button"><i class="icons fa-solid fa-computer-mouse"></i> Support</a></li>
-				<li><a href="#" class="contact_button"><i class="icons fa-regular fa-paper-plane"></i> Contact</a></li>
-				<li class="search_menu"><input type="text" class="search_field" placeholder="Search..."/><a href="#"  class="search_button"><i class="icons fa-solid fa-magnifying-glass"></i></a></li>
-				<li><a href="#"  class="menu_button"><i class="icons fa-solid fa-bars"></i></a></li>
-			</ul>
+			<div class="mobile_menu_container">
+				<div>
+					<ul class="top_buttons_container">
+						<li><a href="#"><img src="img/f-logo.png" /></a></li>
+						<li><a href="#" class="tel_button"><i class="fa-solid fa-phone-volume"></i></a></li>
+						<li><a href="#" class="support_button"><i class="icons fa-solid fa-computer-mouse"></i> Support</a></li>
+						<li><a href="#" class="contact_button"><i class="icons fa-regular fa-paper-plane"></i> Contact</a></li>
+						<li class="search_menu"><input type="text" class="search_field" placeholder="Search..."/><a href="#"  class="search_button"><i class="icons fa-solid fa-magnifying-glass"></i></a></li>
+						<li><a href="#"  class="menu_button"><i class="icons fa-solid fa-bars"></i></a></li>
+					</ul>
+				</div>
+				<div class="mobile_search_container">
+					<input type="text" class="mobile_search_field" placeholder="Search..."/>
+					<span class="mobile_search_button"><a href="#"><i class="icons fa-solid fa-magnifying-glass"></i></a></span>
+				</div>
+			</div>
 			<!--  header -->
 			<!--  Menu -->
 			<div class="sec_button_container">
@@ -185,8 +194,10 @@
 			</div>
 			<!--  Menu -->
 		</header>
-		<!--end of Top menus-->
+		<!-- end of Top menus -->
+		<!-- Main content -->
 		<div class="page_wrap">
+			<!-- carousel  -->
 			<header class="carousel_header">
 				<div class="carousel_content_container">
 					<h1 class="carousel_heading">The East Of England's Leading Technology Company</h1>
@@ -194,10 +205,104 @@
 					<a href="#" class="contact_button">Contact us <i class="fa-solid fa-arrow-right"></i></a>
 				</div>
 			</header>
+			<!-- end of carousel -->
+			<!-- Newsletter -->
+			<div class="newsletter_container">
+				<div>
+					<h1>Email Newsletter Sign-Up</h1>
+					<form action="#" method="post">
+						<section>
+							<div>
+								<label for="name">Your Name</label>
+								<input id="name" type="text" name="name" required="required"/>
+							</div><div>
+								<label for="email">Your Email</label>
+								<input id="email" type="email" name="email" required="required"/>
+							</div>
+						</section>
+						<section class="cb_container">
+							<span class="cb_span"><input id="cb_marketing" type="checkbox" name="cb_marketing"/></span><span><label for="cb_marketing">Please 
+							tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep 
+							your data safe.</label></span>
+						</section>
+						<section>
+							<input type="submit" name="submit" value="subscribe"/>
+						</section>
+					</form>
+				</div>
+			</div>
+			<!--  end of Newsletter -->
 		</div>
+		<!-- end of Main content -->
+		<!-- Footer  -->
 		<footer class="main_footer">
-			<div class="main_footer_container">
+			<div>
+				<div class="main_footer_container">
+					<div>
+						<ul>
+							<li><h2>ABOUT NETMATTERS</h2></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Our Careers</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookie Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#">Environmental Policy</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h2>OUR SERVICES</h2></li>
+							<li><a href="#">Bespoke Software</a></li>
+							<li><a href="#">IT Support</a></li>
+							<li><a href="#">Digital Marketing</a></li>
+							<li><a href="#">Telecoms Services</a></li>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Cyber Security</a></li>
+							<li><a href="#">Developer Training</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h2>CAMBRIDGE OFFICE</h2></li>
+							<li>Unit 1.31,</li>
+							<li>St John's Innovation Centre,</li>
+							<li>Cowley Road, Milton,</li>
+							<li>Cambridge,</li>
+							<li>CB4 0WS</li>
+							<li>&nbsp;</li>
+							<li>Tel: <a href="#">01223 37 57 72</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h2>WYMONDHAM OFFICE</h2></li>
+							<li>Unit 15,</li>
+							<li>Penfold Drive,</li>
+							<li>Gateway 11 Business Park,</li>
+							<li>Wymondham, Norfolk,</li>
+							<li>NR18 0WZ</li>
+							<li>&nbsp;</li>
+							<li>Tel: <a href="#">01603 70 40 20</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><h2>GREAT YARMOUTH OFFICE</h2></li>
+							<li>Suite F23,</li>
+							<li>Beacon Innovation Centre,</li>
+							<li>Beacon Park, Gorleston,</li>
+							<li>Great Yarmouth, Norfolk,</li>
+							<li>NR31 7RA</li>
+	 						<li>&nbsp;</li>
+							<li>Tel: <a href="#">01493 60 32 04</a></li>
+						</ul>
+					</div>
+				</div>
+				<p>&copy; Copyright Netmatters 2022. All rights reserved. - <a href="#">Sitemap</a></p>
 			</div>
 		</footer>
+		<!-- end of Footer  -->
 	</body>
 </html>
