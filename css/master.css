@@ -998,14 +998,23 @@
   width: 30px;
   height: 30px;
   appearance: none;
-  outline: 3px solid black;
-  border-radius: 1px;
+  outline: none;
+  border: 3px solid #333645;
+  border-radius: 4px;
   cursor: pointer;
   display: inline-block;
 }
 
 .newsletter_container > div input[type="checkbox"]:checked {
-  background-color: black;
+  background-color: #333645;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.newsletter_container > div input[type="checkbox"]:checked:after {
+  font: var(--fa-font-solid);
+  content: "\f00c";
 }
 
 .newsletter_container > div .cb_container {

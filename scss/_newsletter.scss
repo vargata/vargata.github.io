@@ -28,13 +28,21 @@
 			width: 30px;
 			height:30px;
 			appearance: none;
-			outline: 3px solid black;
-			border-radius: 1px;
+			outline: none;
+			border: 3px solid #333645;
+			border-radius: 4px;
 			cursor: pointer;
 			display: inline-block;
 			
 			&:checked{
-				background-color: black;
+				background-color: #333645;
+				color: white;
+				font-size: 16px;
+				text-align: center;
+				&:after{
+					font: var(--fa-font-solid);
+    				content: "\f00c";
+				}
 			}
 		}
 		
