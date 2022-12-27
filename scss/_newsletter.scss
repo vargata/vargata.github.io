@@ -1,0 +1,114 @@
+.newsletter_container{
+	background-color: #ddd;
+	width: 100%;
+	
+	& > div{
+		@media (max-width: 990px){
+			max-width: 750px;
+		}
+		@media (min-width:990px){
+			width: 970px;
+		}
+		@media (min-width: 1260px){		
+			width: 1200px;	
+		}
+		margin: auto;
+		padding: 3rem 1rem;
+		
+		input[type="submit"]{
+			@extend %button;
+			padding: 10px;
+			background-color: #333645;
+			font-family: inherit;
+			font-size: 17px;
+		} 
+
+		input[type="checkbox"]{
+			vertical-align: middle;
+			width: 30px;
+			height:30px;
+			appearance: none;
+			outline: 3px solid black;
+			border-radius: 1px;
+			cursor: pointer;
+			display: inline-block;
+			
+			&:checked{
+				background-color: black;
+			}
+		}
+		
+		.cb_container{
+			@media (max-width: 990px){
+				max-width: 720px;
+			}
+			@media (min-width:990px){
+				width: 940px;
+			}
+			@media (min-width: 1260px){		
+				width: 1170px;	
+			}
+			display: flex;
+			margin-bottom: 2rem;
+		}
+				
+		.cb_span{
+			display: inline-block;
+			width: 50px;
+			min-width: 50px;
+		}
+		
+		input[type="text"],
+		input[type="email"]{
+			height: 40px;
+			width: 100%;
+			border-radius: 3px;
+			padding: 2px;
+			border: 1px solid lightgray;
+				&:focus{
+					border: 1px solid lightgray;
+					outline: none;
+					box-shadow: 0px 0px 10px 1px rgba(rgb(80, 200, 255), 0.8);
+			}
+		}
+		
+		h1{
+			font-weight: 100;
+		}
+		
+		label{
+			font-size: 15px;
+			line-height: 2rem;
+			font-weight: 600;
+			letter-spacing: 1.2px;
+			cursor: pointer;
+		}
+		
+		a{
+			color: black;
+			text-decoration: underline;
+		}
+		
+		div{
+			box-sizing: border-box;
+			display: inline-block;
+			padding-right: 30px;
+			padding-bottom: 20px;
+			width: 50%;
+						
+			@media (max-width:990px){
+				width: 100%;
+			}
+						
+			label{				
+				display: block;
+				letter-spacing: 1.5px;
+				
+				&::after{
+					content: " *";
+					color: #d24d57;
+				}
+			}
+		}
+	}
+}
