@@ -1,0 +1,155 @@
+.services_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 50px 15px;
+	margin: 0px auto;
+	gap: 30px;
+
+	@media (max-width: 770px){
+		flex-direction: column;
+	}
+	@media (min-width: 770px){
+		width: 720px;
+	}
+	@media (min-width:990px){
+		width: 940px;
+	}
+	@media (min-width: 1260px){		
+		width: 1170px;
+	}
+	
+	.visible_viewall{
+		display: flex;
+		align-items: center;
+		color:black;
+		font-size: 26px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		
+		@media (max-width: 770px){
+			display: none;
+		}
+		
+		&:visited{
+			color: black;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	
+	.hidden_viewall{
+		display: none;
+		color:black;
+		font-size: 26px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		
+		@media (max-width: 770px){
+			display: block;	
+			text-align: center;
+		}		
+		
+		&:visited{
+			color: black;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	
+	.services_header{
+		display: flex;
+		flex-grow: 1;
+		flex-basis: 100%;
+		justify-content: space-between;
+		
+		h1{
+			display: block;
+			font-size: 40px;
+			letter-spacing: 2px;
+			font-weight: 800;
+		}
+	}
+	
+	@for $i from 1 through 7{
+		.services_content#{$i}{
+			
+			@media (min-width: 770px){
+				@if $i < 4{
+					min-width: 400px;
+				} @else {
+					min-width: 200px; 
+				}
+			}
+			@media (min-width:990px){
+				@if $i < 4{
+					min-width: 200px;
+				} @else {
+					min-width: 300px; 
+				}
+			}
+			@media (min-width: 1260px){
+				@if $i < 4{
+					min-width: 300px;
+				} @else {
+					min-width: 200px; 
+				}
+			}
+						
+			flex: 1 1 0%;
+			display: table-cell;
+			border: 1px solid lightgray;
+			padding: 30px 25px; 
+			border-radius: 15px;
+			text-align: center;			
+			color: #333645;
+			box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+			transition: .5s ease;
+			
+			h3{
+				letter-spacing: 1px;
+				font-weight: 100;
+				margin-top: 15px;
+			}
+			
+			p{
+				letter-spacing: .6px;
+				font-size: 13px;
+				line-height: 22px;
+				margin: 20px 0px;
+			}
+			
+			i{
+				padding: 25px;
+				border-radius: 50%;
+				background-color: nth($menu_bg_colors, $i);
+				color: white;
+			}
+			
+			span{
+				@extend %button;
+				padding: 10px 15px;
+				background-color: nth($menu_bg_colors, $i);
+				color: white;
+			}
+			
+			&:hover{
+				background-color: nth($menu_bg_colors, $i);
+				color: white;
+				transform: translateY(-10px)
+			}
+			
+			&:hover i{
+				background-color: white;
+				color: nth($menu_bg_colors, $i);
+			}
+			
+			&:hover span{
+				background-color: white;
+				color: nth($menu_bg_colors, $i);
+			} 
+		}
+	}
+}
