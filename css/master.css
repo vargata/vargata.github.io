@@ -1856,6 +1856,7 @@
 }
 
 .services_container .services_content1 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -1928,6 +1929,7 @@
 }
 
 .services_container .services_content2 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -1991,6 +1993,12 @@
   .services_container .services_content3 {
     min-width: 300px;
   }
+  .services_container .services_content3 p::after {
+    content: "O";
+    line-height: 22px;
+    display: block;
+    visibility: hidden;
+  }
 }
 
 .services_container .services_content3 h3 {
@@ -2000,6 +2008,7 @@
 }
 
 .services_container .services_content3 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -2072,6 +2081,7 @@
 }
 
 .services_container .services_content4 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -2144,6 +2154,7 @@
 }
 
 .services_container .services_content5 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -2216,6 +2227,7 @@
 }
 
 .services_container .services_content6 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;
@@ -2288,6 +2300,7 @@
 }
 
 .services_container .services_content7 p {
+  display: block;
   letter-spacing: .6px;
   font-size: 13px;
   line-height: 22px;

@@ -96,8 +96,17 @@
 				} @else {
 					min-width: 200px; 
 				}
+
+				@if $i == 3{
+					& p::after{
+						content: "O";
+						line-height: 22px;
+						display: block;
+						visibility: hidden;
+					}
+				}
 			}
-						
+
 			flex: 1 1 0%;
 			display: table-cell;
 			border: 1px solid lightgray;
@@ -115,6 +124,7 @@
 			}
 			
 			p{
+				display: block;
 				letter-spacing: .6px;
 				font-size: 13px;
 				line-height: 22px;
