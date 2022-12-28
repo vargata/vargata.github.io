@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 50px 0px;
+	margin: auto;
+	
 	@media (max-width: 770px){
 		display: none;
 	}
@@ -14,50 +16,87 @@
 	@media (min-width: 1260px){
 		width: 1170px;
 	}
-	margin: auto;
 	
 	@for $i from 1 through 4{
 		.client_logo#{$i}{
 			display: block;
+			position: relative;
 			padding: 0px 20px;
+			text-align: center;
 			
 			img{
 				width: 100%;
 			}
 			
-			img:first-child(){
+			img:first-of-type(){
 				display: block;
 			}			
-			&:hover img:first-child{
+			&:hover img:first-of-type(){
 				display: none;
 			}
 						
-			img:last-child(){
+			img:last-of-type(){
 				display: none;
 			}
-			&:hover img:last-child{
+			&:hover img:last-of-type(){
 				display: block;
 			}
 			
-			.hidden_content{
+			.hidden_content_container{
 				position: absolute;
-				text-align: center;                                  //ITT KELL FOLYTATNI!!!!!
-				color: white;
-				background-color: #333645;
+				bottom: 100%;
+				left: -100px;
+				right: -100px;
+				text-align: center;
 				display: none;
-			}
-			&:hover .hidden_content{
-				display: block;
-			}
-			
-			.triangle{
-				position: absolute;
-				border-style: solid;
-				border: 20px 30px 0px 30px;
-				background-color: #333645;
-				display: none;
-			}
-			&:hover .triangle{
+				
+				.hidden_content{
+					width: 240px;
+					padding: 20px;
+					text-align: center;
+					margin: 0px auto;
+					margin-bottom: 60px;
+					color: white;
+					background-color: #333645;
+					font-size: 13px;
+					letter-spacing: 1px;
+					z-index: 1;
+					
+					h3{
+						position: relative;
+						padding-bottom: 17px;
+						margin-bottom: 13px;
+						
+						&::after{
+							content: " ";
+							position: absolute;
+							bottom: 0px;
+							left: 0px;
+							right: 0px;
+							display: block;
+							width: 30px;
+							height: 3px;
+							margin: auto;
+							background-color: white;
+						}
+					}
+				}
+	
+				.triangle{
+					position: absolute;
+					bottom: 20px;
+					width: 0px;
+					height:0px;
+					left: 0px;
+					right: 0px;
+					border-top: 40px solid #333645;					
+					border-left: 40px solid transparent;
+					border-right: 40px solid transparent;
+					margin: 0px auto;
+					z-index: 1;
+				}
+			}			
+			&:hover .hidden_content_container{
 				display: block;
 			}
 		}

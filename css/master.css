@@ -127,8 +127,8 @@
 }
 
 .arrow_div1 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #67809f;
@@ -222,8 +222,8 @@
 }
 
 .arrow_div2 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #4183d7;
@@ -317,8 +317,8 @@
 }
 
 .arrow_div3 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #2ecc71;
@@ -412,8 +412,8 @@
 }
 
 .arrow_div4 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #d64541;
@@ -507,8 +507,8 @@
 }
 
 .arrow_div5 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #926fb1;
@@ -602,8 +602,8 @@
 }
 
 .arrow_div6 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #f62459;
@@ -697,8 +697,8 @@
 }
 
 .arrow_div7 {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 30px solid #ce4125;
@@ -1384,197 +1384,345 @@
 
 .client_logo_container .client_logo1 {
   display: block;
+  position: relative;
   padding: 0px 20px;
+  text-align: center;
 }
 
 .client_logo_container .client_logo1 img {
   width: 100%;
 }
 
-.client_logo_container .client_logo1 img:first-child {
+.client_logo_container .client_logo1 img:first-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo1:hover img:first-child {
+.client_logo_container .client_logo1:hover img:first-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo1 img:last-child {
+.client_logo_container .client_logo1 img:last-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo1:hover img:last-child {
+.client_logo_container .client_logo1:hover img:last-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo1 .hidden_content {
+.client_logo_container .client_logo1 .hidden_content_container {
   position: absolute;
+  bottom: 100%;
+  left: -100px;
+  right: -100px;
   text-align: center;
+  display: none;
+}
+
+.client_logo_container .client_logo1 .hidden_content_container .hidden_content {
+  width: 240px;
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 60px;
   color: white;
   background-color: #333645;
-  display: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
-.client_logo_container .client_logo1:hover .hidden_content {
-  display: block;
+.client_logo_container .client_logo1 .hidden_content_container .hidden_content h3 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 13px;
 }
 
-.client_logo_container .client_logo1 .triangle {
+.client_logo_container .client_logo1 .hidden_content_container .hidden_content h3::after {
+  content: " ";
   position: absolute;
-  border-style: solid;
-  border: 20px 30px 0px 30px;
-  background-color: #333645;
-  display: none;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: auto;
+  background-color: white;
 }
 
-.client_logo_container .client_logo1:hover .triangle {
+.client_logo_container .client_logo1 .hidden_content_container .triangle {
+  position: absolute;
+  bottom: 20px;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: 40px solid #333645;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.client_logo_container .client_logo1:hover .hidden_content_container {
   display: block;
 }
 
 .client_logo_container .client_logo2 {
   display: block;
+  position: relative;
   padding: 0px 20px;
+  text-align: center;
 }
 
 .client_logo_container .client_logo2 img {
   width: 100%;
 }
 
-.client_logo_container .client_logo2 img:first-child {
+.client_logo_container .client_logo2 img:first-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo2:hover img:first-child {
+.client_logo_container .client_logo2:hover img:first-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo2 img:last-child {
+.client_logo_container .client_logo2 img:last-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo2:hover img:last-child {
+.client_logo_container .client_logo2:hover img:last-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo2 .hidden_content {
+.client_logo_container .client_logo2 .hidden_content_container {
   position: absolute;
+  bottom: 100%;
+  left: -100px;
+  right: -100px;
   text-align: center;
+  display: none;
+}
+
+.client_logo_container .client_logo2 .hidden_content_container .hidden_content {
+  width: 240px;
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 60px;
   color: white;
   background-color: #333645;
-  display: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
-.client_logo_container .client_logo2:hover .hidden_content {
-  display: block;
+.client_logo_container .client_logo2 .hidden_content_container .hidden_content h3 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 13px;
 }
 
-.client_logo_container .client_logo2 .triangle {
+.client_logo_container .client_logo2 .hidden_content_container .hidden_content h3::after {
+  content: " ";
   position: absolute;
-  border-style: solid;
-  border: 20px 30px 0px 30px;
-  background-color: #333645;
-  display: none;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: auto;
+  background-color: white;
 }
 
-.client_logo_container .client_logo2:hover .triangle {
+.client_logo_container .client_logo2 .hidden_content_container .triangle {
+  position: absolute;
+  bottom: 20px;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: 40px solid #333645;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.client_logo_container .client_logo2:hover .hidden_content_container {
   display: block;
 }
 
 .client_logo_container .client_logo3 {
   display: block;
+  position: relative;
   padding: 0px 20px;
+  text-align: center;
 }
 
 .client_logo_container .client_logo3 img {
   width: 100%;
 }
 
-.client_logo_container .client_logo3 img:first-child {
+.client_logo_container .client_logo3 img:first-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo3:hover img:first-child {
+.client_logo_container .client_logo3:hover img:first-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo3 img:last-child {
+.client_logo_container .client_logo3 img:last-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo3:hover img:last-child {
+.client_logo_container .client_logo3:hover img:last-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo3 .hidden_content {
+.client_logo_container .client_logo3 .hidden_content_container {
   position: absolute;
+  bottom: 100%;
+  left: -100px;
+  right: -100px;
   text-align: center;
+  display: none;
+}
+
+.client_logo_container .client_logo3 .hidden_content_container .hidden_content {
+  width: 240px;
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 60px;
   color: white;
   background-color: #333645;
-  display: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
-.client_logo_container .client_logo3:hover .hidden_content {
-  display: block;
+.client_logo_container .client_logo3 .hidden_content_container .hidden_content h3 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 13px;
 }
 
-.client_logo_container .client_logo3 .triangle {
+.client_logo_container .client_logo3 .hidden_content_container .hidden_content h3::after {
+  content: " ";
   position: absolute;
-  border-style: solid;
-  border: 20px 30px 0px 30px;
-  background-color: #333645;
-  display: none;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: auto;
+  background-color: white;
 }
 
-.client_logo_container .client_logo3:hover .triangle {
+.client_logo_container .client_logo3 .hidden_content_container .triangle {
+  position: absolute;
+  bottom: 20px;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: 40px solid #333645;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.client_logo_container .client_logo3:hover .hidden_content_container {
   display: block;
 }
 
 .client_logo_container .client_logo4 {
   display: block;
+  position: relative;
   padding: 0px 20px;
+  text-align: center;
 }
 
 .client_logo_container .client_logo4 img {
   width: 100%;
 }
 
-.client_logo_container .client_logo4 img:first-child {
+.client_logo_container .client_logo4 img:first-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo4:hover img:first-child {
+.client_logo_container .client_logo4:hover img:first-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo4 img:last-child {
+.client_logo_container .client_logo4 img:last-of-type {
   display: none;
 }
 
-.client_logo_container .client_logo4:hover img:last-child {
+.client_logo_container .client_logo4:hover img:last-of-type {
   display: block;
 }
 
-.client_logo_container .client_logo4 .hidden_content {
+.client_logo_container .client_logo4 .hidden_content_container {
   position: absolute;
+  bottom: 100%;
+  left: -100px;
+  right: -100px;
   text-align: center;
+  display: none;
+}
+
+.client_logo_container .client_logo4 .hidden_content_container .hidden_content {
+  width: 240px;
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 60px;
   color: white;
   background-color: #333645;
-  display: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
-.client_logo_container .client_logo4:hover .hidden_content {
-  display: block;
+.client_logo_container .client_logo4 .hidden_content_container .hidden_content h3 {
+  position: relative;
+  padding-bottom: 17px;
+  margin-bottom: 13px;
 }
 
-.client_logo_container .client_logo4 .triangle {
+.client_logo_container .client_logo4 .hidden_content_container .hidden_content h3::after {
+  content: " ";
   position: absolute;
-  border-style: solid;
-  border: 20px 30px 0px 30px;
-  background-color: #333645;
-  display: none;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: auto;
+  background-color: white;
 }
 
-.client_logo_container .client_logo4:hover .triangle {
+.client_logo_container .client_logo4 .hidden_content_container .triangle {
+  position: absolute;
+  bottom: 20px;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: 40px solid #333645;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+.client_logo_container .client_logo4:hover .hidden_content_container {
   display: block;
 }
 
