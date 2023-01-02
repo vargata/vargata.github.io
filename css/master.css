@@ -15,9 +15,44 @@
 .carousel_header {
   background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
   background-blend-mode: multiply;
+  position: relative;
   height: 550px;
   display: table-cell;
   vertical-align: middle;
+}
+
+.carousel_header .carousel_buttons {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+
+.carousel_header .carousel_buttons span {
+  margin: 0px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.carousel_header .carousel_buttons span:first-child {
+  background-color: white;
+}
+
+.carousel_header .carousel_buttons span:first-child:after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: -6px;
+  top: -6px;
+  width: 19px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
 .carousel_content_container {
@@ -2800,6 +2835,34 @@
 
 .reviews_container .flex_box .flex_item .buttons .tp_button:hover {
   background-color: #008258;
+}
+
+.awards_logo_container {
+  display: flex;
+  padding: 50px 0px;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.awards_logo_container > * {
+  padding: 0px 20px;
+  margin-right: 50px;
+}
+
+.awards_logo_container > * img:first-child {
+  display: none;
+}
+
+.awards_logo_container > * img:last-child {
+  display: inline-block;
+}
+
+.awards_logo_container > *:hover img:first-child {
+  display: inline-block;
+}
+
+.awards_logo_container > *:hover img:last-child {
+  display: none;
 }
 
 .icons {

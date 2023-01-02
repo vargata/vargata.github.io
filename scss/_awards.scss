@@ -1,0 +1,27 @@
+.awards_logo_container{
+	display: flex;
+	padding: 50px 0px;
+	overflow: hidden;
+	flex-direction: row;
+	
+	& > *{
+		padding: 0px 20px;
+		margin-right: 50px;
+		
+		img:first-child{
+			display: none;
+		}
+		
+		img:last-child{
+			display: inline-block;
+		}
+		
+		&:hover img:first-child{
+			display: inline-block;
+		}
+		
+		&:hover img:last-child{
+			display: none;
+		}
+	}
+}

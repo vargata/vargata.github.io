@@ -1,9 +1,44 @@
 .carousel_header{
 	background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
 	background-blend-mode: multiply;
+	position: relative;
 	height: 550px;
 	display: table-cell;
 	vertical-align: middle;
+	
+	.carousel_buttons{
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		text-align: center;
+		
+		& span{
+			margin: 0px 10px;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, .2);
+			position: relative;
+			
+			&:first-child{
+				background-color: white;
+				
+				&:after{
+					position: absolute;
+					display: block;
+					content: "";
+					left: -6px;
+					top: -6px;
+					width: 19px;
+					height: 18px;
+					border-radius: 50%;
+					border: 2px solid white;	
+				}
+			}
+		}
+	}
 }
 
 .carousel_content_container{
