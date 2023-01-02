@@ -2741,7 +2741,7 @@
 @media (max-width: 990px) {
   .reviews_container .flex_box {
     flex-direction: column;
-    width: 750px;
+    max-width: 750px;
   }
 }
 
