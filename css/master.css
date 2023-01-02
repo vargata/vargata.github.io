@@ -3,7 +3,7 @@
   display: none;
 }
 
-.carousel_content_container .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span {
+.carousel_content_container .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -2679,6 +2679,118 @@
 
 .news_container .news_content3:hover {
   transform: translateY(-10px);
+}
+
+.reviews_container {
+  background-color: #333645;
+}
+
+.reviews_container .flex_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+  color: white;
+}
+
+@media (max-width: 990px) {
+  .reviews_container .flex_box {
+    flex-direction: column;
+    width: 750px;
+  }
+}
+
+@media (min-width: 990px) {
+  .reviews_container .flex_box {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .reviews_container .flex_box {
+    width: 1170px;
+  }
+}
+
+.reviews_container .flex_box .flex_item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.reviews_container .flex_box .flex_item .content a:hover {
+  text-decoration: underline;
+}
+
+.reviews_container .flex_box .flex_item .content h1 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.reviews_container .flex_box .flex_item .content p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 20px 0px;
+}
+
+.reviews_container .flex_box .flex_item .content .review {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.reviews_container .flex_box .flex_item .content .review span {
+  display: block;
+  font-size: 18px;
+  color: #a3a8ac;
+  margin: 20px 0px;
+}
+
+.reviews_container .flex_box .flex_item .content .orange_stars {
+  font-size: 44px;
+  color: orange;
+}
+
+.reviews_container .flex_box .flex_item .buttons {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.reviews_container .flex_box .flex_item .buttons .rm_button {
+  background-color: #272936;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.reviews_container .flex_box .flex_item .buttons .rm_button:hover {
+  background-color: #1c1e27;
+}
+
+.reviews_container .flex_box .flex_item .buttons .google_button {
+  background-color: #4387f6;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.reviews_container .flex_box .flex_item .buttons .google_button:hover {
+  background-color: #2b77f5;
+}
+
+.reviews_container .flex_box .flex_item .buttons .tp_button {
+  background-color: #009b69;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.reviews_container .flex_box .flex_item .buttons .tp_button:hover {
+  background-color: #008258;
 }
 
 .icons {

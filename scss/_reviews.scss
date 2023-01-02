@@ -1,0 +1,109 @@
+.reviews_container{
+	background-color: #333645;
+	
+	.flex_box{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: auto;
+		padding-top: 50px;
+		color: white;
+		
+		@media (max-width: 990px){
+			flex-direction: column;
+			width: 750px;
+		}
+		@media (min-width:990px){
+			width: 970px;
+		}
+		@media (min-width: 1260px){		
+			width: 1170px;
+		}
+		
+		.flex_item{
+			flex: 1 1 0;
+			display: flex;
+			flex-direction: column;
+			padding: 0px 15px;
+			
+			.content{
+				
+				a:hover{
+					text-decoration: underline;
+				}
+				
+				h1{
+					font-size: 34px;
+					font-weight: 800;
+					letter-spacing: 1px;
+					margin-bottom: 40px;
+				}
+			
+				p{
+					letter-spacing: 1px;
+					line-height: 30px;
+					margin: 20px 0px;
+				}
+				
+				.review{
+					font-size: 20px;
+					font-style: italic;
+					font-weight: 600;
+					
+					span{
+						display: block;
+						font-size: 18px;
+						color: #a3a8ac;
+						margin: 20px 0px;
+					}
+				}
+				
+				.orange_stars{
+					font-size: 44px;
+					color: orange;
+				}
+			}
+			
+			.buttons{
+				margin-top: auto;
+				margin-bottom: 50px;
+			
+				.rm_button{
+					@extend %button;
+					background-color: #272936;
+					margin-top: 20px;
+					border-radius: 5px;
+					padding: 15px 30px;
+					
+					&:hover{
+						background-color: darken(#272936, 5%)
+					}
+				}
+				
+				.google_button{
+					@extend %button;
+					background-color: #4387f6;
+					margin-top: 20px;
+					border-radius: 5px;
+					padding: 15px 30px;
+					
+					&:hover{
+						background-color: darken(#4387f6, 5%)
+					}
+				}
+				
+				.tp_button{
+					@extend %button;
+					background-color: #009b69;
+					margin-top: 20px;
+					border-radius: 5px;
+					padding: 15px 30px;
+					
+					&:hover{
+						background-color: darken(#009b69, 5%)
+					}
+				}
+			}
+		}
+	}
+}
