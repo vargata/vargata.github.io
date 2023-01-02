@@ -73,8 +73,9 @@
 					@extend %button;
 					background-color: #272936;
 					margin-top: 20px;
+					line-height: 35px;
+					padding: 10px 30px;
 					border-radius: 5px;
-					padding: 15px 30px;
 					
 					&:hover{
 						background-color: darken(#272936, 5%)
@@ -85,8 +86,9 @@
 					@extend %button;
 					background-color: #4387f6;
 					margin-top: 20px;
+					line-height: 35px;
+					padding: 10px 30px;
 					border-radius: 5px;
-					padding: 15px 30px;
 					
 					&:hover{
 						background-color: darken(#4387f6, 5%)
@@ -97,8 +99,9 @@
 					@extend %button;
 					background-color: #009b69;
 					margin-top: 20px;
+					line-height: 35px;
+					padding: 10px 30px;
 					border-radius: 5px;
-					padding: 15px 30px;
 					
 					&:hover{
 						background-color: darken(#009b69, 5%)

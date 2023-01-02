@@ -23,7 +23,6 @@
 	.mobile_search_button{
 		display: inline-block;
 		margin: 8px 0px;
-		font-size: 20px;
 		position: absolute;
 		right: 5px;
 		
@@ -84,7 +83,6 @@
 			display: none;
 		}
 		@extend %button;
-		padding: 15px 20px;
 		margin: 5px 10px;
 		background-color: #999aa2;
 		&:hover{
@@ -97,7 +95,6 @@
 			display: none;
 		}
 		@extend %button;
-		padding: 15px 20px;
 		margin: 5px 10px;
 		background-color: #4183d7;
 		&:hover{
@@ -107,7 +104,6 @@
 	
 	.menu_button{
 		@extend %button;
-		padding: 15px 20px;
 		margin: 5px 10px;
 		background-color: lighten(#000000, 3%);
 		&:hover{
@@ -124,7 +120,6 @@
 			display: none;
 		}
 		@extend %button;
-		padding: 15px 20px;
 		margin: 5px 0px;
 		background-color: #999aa2;
 		&:hover{

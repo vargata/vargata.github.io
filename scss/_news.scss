@@ -100,8 +100,9 @@
 				
 				.img_button{
 					@extend %button;
-					padding: 3px 8px;
+					padding: 5px 10px;
 					font-size: 13px;
+					line-height: 13px;
 					font-weight: 600;
 					letter-spacing: 1px;
 					border-radius: 0px;
@@ -140,7 +141,8 @@
 			
 				span{
 					@extend %button;
-					padding: 10px 15px;
+					font-size: 17px;
+					line-height: 35px;
 					background-color: nth($news_colors, $i);
 					color: white;
 				}

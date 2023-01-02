@@ -132,15 +132,17 @@
 			}
 			
 			i{
-				padding: 25px;
+				padding: 20px;
 				border-radius: 50%;
+				font-size: 28px;
 				background-color: nth($menu_bg_colors, $i);
 				color: white;
 			}
 			
 			span{
 				@extend %button;
-				padding: 10px 15px;
+				font-size: 17px;
+				line-height: 35px;;
 				background-color: nth($menu_bg_colors, $i);
 				color: white;
 			}
