@@ -20,6 +20,10 @@
 			font-size: 17px;
 			line-height: 35px;
 			background-color: #333645;
+			
+			&:hover{
+				background-color: darken(#333645, 10%);
+			}
 		} 
 
 		input[type="checkbox"]{
