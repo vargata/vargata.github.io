@@ -1,4 +1,4 @@
-.carousel_content_container .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
+.carousel_header .carousel_container .carousel_content_container .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -17,69 +17,58 @@
 .carousel_header {
   background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
   background-blend-mode: multiply;
-  height: 550px;
+  display: block;
+  text-align: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.carousel_header .carousel_container .carousel_content_container {
   display: table-cell;
   vertical-align: middle;
-}
-
-.carousel_header .carousel_buttons {
-  width: 100%;
-  display: block;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.carousel_header .carousel_buttons span {
-  margin: 0px 10px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
-}
-
-.carousel_header .carousel_buttons span:first-child {
-  background-color: white;
-}
-
-.carousel_header .carousel_buttons span:first-child:after {
-  position: absolute;
-  display: block;
-  content: "";
-  left: -6px;
-  top: -6px;
-  width: 19px;
-  height: 18px;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-
-.carousel_content_container {
-  width: 89%;
   box-sizing: border-box;
   margin: auto;
-  padding: 4rem 1rem;
+  padding: 60px 20px;
 }
 
 @media (max-width: 990px) {
-  .carousel_content_container {
+  .carousel_header .carousel_container .carousel_content_container {
     text-align: center;
+    max-width: 750px;
   }
 }
 
-.carousel_content_container .contact_button {
+@media (min-width: 990px) {
+  .carousel_header .carousel_container .carousel_content_container {
+    text-align: left;
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .carousel_header .carousel_container .carousel_content_container {
+    text-align: left;
+    width: 1200px;
+  }
+}
+
+.carousel_header .carousel_container .carousel_content_container .contact_button {
   padding: 5px 20px;
   font-size: 20px;
   line-height: 50px;
   background-color: #926fb1;
 }
 
-.carousel_content_container .contact_button:hover {
+.carousel_header .carousel_container .carousel_content_container .contact_button:hover {
   background-color: #8a65ac;
 }
 
-.carousel_heading {
+.carousel_header .carousel_container .carousel_heading {
   color: white;
   font-size: 4rem;
   font-weight: 600;
@@ -87,13 +76,13 @@
 }
 
 @media (max-width: 990px) {
-  .carousel_heading {
+  .carousel_header .carousel_container .carousel_heading {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 }
 
-.carousel_paragraph {
+.carousel_header .carousel_container .carousel_paragraph {
   color: white;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -103,10 +92,44 @@
 }
 
 @media (max-width: 990px) {
-  .carousel_paragraph {
+  .carousel_header .carousel_container .carousel_paragraph {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
+}
+
+.carousel_header .carousel_container .carousel_buttons {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+}
+
+.carousel_header .carousel_container .carousel_buttons span {
+  margin: 0px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.carousel_header .carousel_container .carousel_buttons span:first-child {
+  background-color: white;
+}
+
+.carousel_header .carousel_container .carousel_buttons span:first-child:after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: -6px;
+  top: -6px;
+  width: 19px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
 .hidden_menu_header {
@@ -124,6 +147,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content1 a:hover {
@@ -167,7 +191,7 @@
   border-top: 30px solid #869ab3;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -221,6 +245,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content2 a:hover {
@@ -264,7 +289,7 @@
   border-top: 30px solid #4183d7;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -318,6 +343,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content3 a:hover {
@@ -361,7 +387,7 @@
   border-top: 30px solid #2ecc71;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -415,6 +441,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content4 a:hover {
@@ -458,7 +485,7 @@
   border-top: 30px solid #d64541;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -512,6 +539,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content5 a:hover {
@@ -555,7 +583,7 @@
   border-top: 30px solid #926fb1;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -609,6 +637,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content6 a:hover {
@@ -652,7 +681,7 @@
   border-top: 30px solid #f62459;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -706,6 +735,7 @@
   text-align: left;
   padding: 3rem;
   text-transform: capitalize;
+  z-index: 1;
 }
 
 .sec_menu_content7 a:hover {
@@ -749,7 +779,7 @@
   border-top: 30px solid #ce4125;
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (min-width: 1260px) {
@@ -2443,6 +2473,7 @@
 .news_container .visible_viewall {
   display: flex;
   align-items: center;
+  font-family: "Font Awesome 6 Free";
   color: black;
   font-size: 26px;
   font-weight: 600;
