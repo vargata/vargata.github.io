@@ -129,16 +129,21 @@
 
 	.search_field{
 		display: none;
+		
 		@media (min-width: 770px) and (max-width: 990px), (min-width: 1260px){
 			display: inline-block;
 		}
-		padding: 5px 15px;
-		height: 42px;		
-		width: 208px;
+		
+		padding: 7px 15px 3px 15px;
+		line-height: 35px;
+		height: 44px;
+		width: 208px;		
+		border: 1px solid lightgray;
+		
 		@media (max-width:990px){
 			width: 140px;
 		}
-		border: 1px solid lightgray;
+		
 		&:focus{
 			border: 1px solid lightgray;
 			outline: none;

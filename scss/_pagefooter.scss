@@ -97,6 +97,8 @@
 
 .copyright{
 	display: inline-flex;
+	font-size: 13px;
+	letter-spacing: 1px;
 	margin-top: 5px;
 	.important{
 		display: block !important;		
@@ -121,7 +123,7 @@
 			display: table-cell;
 			text-align: center;
 			line-height: 40px;
-			width: 30px;
+			width: 35px;
 			height: 40px;
 			border-radius: 50%;
 			&:hover{

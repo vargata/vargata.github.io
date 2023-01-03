@@ -20,8 +20,8 @@
 	}
 	
 	.visible_viewall{
-		display: flex;
-		align-items: center;
+		display: block;
+		text-align: center;
 		color:black;
 		font-size: 26px;
 		font-weight: 600;
@@ -36,6 +36,11 @@
 		}
 		&:hover{
 			text-decoration: underline;
+		}
+		
+		&::after{			
+			font-family: "Font Awesome 6 Free";
+			content: "\f061";
 		}
 	}
 	
@@ -56,6 +61,11 @@
 		}
 		&:hover{
 			text-decoration: underline;
+		}
+		
+		&::after{			
+			font-family: "Font Awesome 6 Free";
+			content: "\f061";
 		}
 	}
 	
