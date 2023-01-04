@@ -122,6 +122,7 @@
 		@extend %button;
 		margin: 5px 0px;
 		background-color: #999aa2;
+		
 		&:hover{
 			background-color: darken(#999aa2, 3%);
 		}
