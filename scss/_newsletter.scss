@@ -19,6 +19,8 @@
 			@extend %button;
 			font-size: 17px;
 			line-height: 35px;
+			outline: none;
+			border: none;
 			background-color: #333645;
 			
 			&:hover{

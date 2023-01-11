@@ -12,9 +12,20 @@
 		left: 0px;
 		right: 0px;
 		text-align: left;
-		padding: 3rem;
+		padding: 3rem 0px;
 		text-transform: capitalize;
 		z-index: 1;
+		
+		&>div{
+			margin: auto;
+			
+			@media (min-width:990px){
+				width: 970px;
+			}
+			@media (min-width: 1260px){		
+				width: 1200px;	
+			}
+		}
 		
 		a:hover{
 			text-decoration: underline;
@@ -23,6 +34,7 @@
 		ul {
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			flex-wrap: wrap;
 			
 			li{
@@ -53,11 +65,11 @@
 	.arrow_div#{$i}{
 		width: 0px;
 	    height: 0px;
-	    border-left: 60px solid transparent;
-	    border-right: 60px solid transparent;
+	    border-left: 70px solid transparent;
+	    border-right: 70px solid transparent;
 	    @media (min-width: 1260px){
-	    	border-left: 80px solid transparent;
-	    	border-right: 80px solid transparent;
+	    	border-left: 85px solid transparent;
+	    	border-right: 85px solid transparent;
 	    }
 	    border-top: 30px solid lighten(nth($menu_bg_colors, $i), 10%);	
 	    display: none;
@@ -72,9 +84,9 @@
 	.sec_button#{$i}{
 		color: white;
 		text-transform: uppercase;
-		width: 120px;
+		width: 140px;
 		@media (min-width: 1260px){
-			width: 160px;
+			width: 170px;
 		}
 		font-size: 18px;
 		line-height: 18px;

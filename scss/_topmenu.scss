@@ -105,9 +105,9 @@
 	.menu_button{
 		@extend %button;
 		margin: 5px 10px;
-		background-color: lighten(#000000, 3%);
+		background-color: #333645;
 		&:hover{
-			background-color: #000000;
+			background-color: darken(#333645, 10%);
 		}
 	}
 	
@@ -120,6 +120,11 @@
 			display: none;
 		}
 		@extend %button;
+		
+		@media (max-width: 990px), (min-width: 1260px){			
+			border-bottom-left-radius: 0px;
+			border-top-left-radius: 0px;
+		}
 		margin: 5px 0px;
 		background-color: #999aa2;
 		
