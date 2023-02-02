@@ -14,7 +14,7 @@
 		text-align: left;
 		padding: 3rem 0px;
 		text-transform: capitalize;
-		z-index: 1;
+		z-index: 2;
 		
 		&>div{
 			margin: auto;
@@ -74,7 +74,7 @@
 	    border-top: 30px solid lighten(nth($menu_bg_colors, $i), 10%);	
 	    display: none;
 	    position: absolute;
-	    z-index: 2;
+	    z-index: 3;
 	    
 	    .sec_button#{$i}:hover &{
 			display: block;

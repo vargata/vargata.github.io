@@ -5,7 +5,7 @@ header.addEventListener('mouseover', function(){
 });
 
 header.addEventListener('mouseleave', function(){	
-	if(window.scrollY > 204) id = setTimeout(hideSticky, 2000);
+	if(window.scrollY > 206) id = setTimeout(hideSticky, 2000);
 });
 
 let lastScroll = 0;
@@ -13,9 +13,9 @@ let id = null;
 
 document.addEventListener('scroll', function(){
 	var scroll = window.scrollY;
-	if(lastScroll > scroll && scroll > 204)
+	if(lastScroll > scroll && scroll > 206)
 		showSticky();
-	if(lastScroll < scroll && scroll > 204)
+	if(lastScroll < scroll && scroll > 206)
 		hideSticky();
 	if(scroll == 0)
 		removeSticky();
@@ -23,7 +23,7 @@ document.addEventListener('scroll', function(){
 	lastScroll = scroll;
 	
 	if(id) clearTimeout(id);
-	if(scroll > 204) id = setTimeout(hideSticky, 2000);
+	if(scroll > 206) id = setTimeout(hideSticky, 2000);
 });
 
 function showSticky(){

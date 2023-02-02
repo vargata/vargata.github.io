@@ -147,7 +147,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content1 > div {
@@ -208,7 +208,7 @@
   border-top: 30px solid #869ab3;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -262,7 +262,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content2 > div {
@@ -323,7 +323,7 @@
   border-top: 30px solid #4183d7;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -377,7 +377,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content3 > div {
@@ -438,7 +438,7 @@
   border-top: 30px solid #2ecc71;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -492,7 +492,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content4 > div {
@@ -553,7 +553,7 @@
   border-top: 30px solid #d64541;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -607,7 +607,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content5 > div {
@@ -668,7 +668,7 @@
   border-top: 30px solid #926fb1;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -722,7 +722,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content6 > div {
@@ -783,7 +783,7 @@
   border-top: 30px solid #f62459;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -837,7 +837,7 @@
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 2;
 }
 
 .sec_menu_content7 > div {
@@ -898,7 +898,7 @@
   border-top: 30px solid #ce4125;
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: 1260px) {
@@ -3119,7 +3119,7 @@ body {
   transition: transform .5s;
   transform: translateY(204px);
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 
@@ -3129,6 +3129,18 @@ body {
   transition: transform .5s;
   transform: translateY(0px);
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
+}
+
+.owl-dot {
+  background-color: #fffa;
+  padding: 10px !important;
+  border-radius: 50%;
+}
+
+owl-next,
+owl-prev {
+  color: #fff;
+  font-size: 52px;
 }
