@@ -35,7 +35,8 @@
 .top_menu_container{
 	display: flex;
 	row-gap: 10px;
-	margin: 20px auto;
+	margin: 0px auto;
+	padding: 20px 0px;
 	flex-direction: column;
 	@media (max-width:990px){
 		max-width: 750px;

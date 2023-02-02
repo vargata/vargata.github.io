@@ -1005,7 +1005,8 @@
 .top_menu_container {
   display: flex;
   row-gap: 10px;
-  margin: 20px auto;
+  margin: 0px auto;
+  padding: 20px 0px;
   flex-direction: column;
 }
 
@@ -3105,5 +3106,29 @@ body {
 }
 
 .page_wrap {
+  width: 100%;
+}
+
+.sticky_container {
+  height: 206px;
+}
+
+.stickyshow {
+  position: fixed;
+  top: -206px;
+  transition: transform .5s;
+  transform: translateY(204px);
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+}
+
+.stickyhide {
+  position: fixed;
+  top: -206px;
+  transition: transform .5s;
+  transform: translateY(0px);
+  background-color: white;
+  z-index: 1;
   width: 100%;
 }
