@@ -15,7 +15,7 @@
 }
 
 .carousel_header {
-  background: no-repeat center/cover url("../img/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
+  background: no-repeat center/cover url("../img/carousel/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
   background-blend-mode: multiply;
   display: block;
   text-align: center;
@@ -3056,31 +3056,32 @@
 }
 
 .awards_logo_container {
-  display: flex;
   padding: 50px 0px;
-  overflow: hidden;
-  flex-direction: row;
 }
 
-.awards_logo_container > * {
-  padding: 0px 20px;
-  margin-right: 50px;
+.awards_logo_container img {
+  width: initial !important;
 }
 
-.awards_logo_container > * img:first-child {
-  display: none;
+.awards_logo_container .col {
+  display: none !important;
 }
 
-.awards_logo_container > * img:last-child {
-  display: inline-block;
+.awards_logo_container .bw {
+  display: block !important;
 }
 
-.awards_logo_container > *:hover img:first-child {
-  display: inline-block;
+.awards_logo_container .item {
+  display: flex;
+  justify-content: center;
 }
 
-.awards_logo_container > *:hover img:last-child {
-  display: none;
+.awards_logo_container .item:hover .col {
+  display: block !important;
+}
+
+.awards_logo_container .item:hover .bw {
+  display: none !important;
 }
 
 .icons {
@@ -3110,17 +3111,24 @@ body {
 }
 
 .sticky_container {
-  height: 206px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.main_header {
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+  border: none;
 }
 
 .stickyshow {
   position: fixed;
   top: -206px;
   transition: transform .5s;
-  transform: translateY(204px);
-  background-color: white;
-  z-index: 2;
-  width: 100%;
+  transform: translateY(206px);
+  box-shadow: 15px 10px 10px 5px #0001;
 }
 
 .stickyhide {
@@ -3128,9 +3136,6 @@ body {
   top: -206px;
   transition: transform .5s;
   transform: translateY(0px);
-  background-color: white;
-  z-index: 2;
-  width: 100%;
 }
 
 .owl-dot {

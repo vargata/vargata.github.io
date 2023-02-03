@@ -1,27 +1,28 @@
-.awards_logo_container{
-	display: flex;
+.awards_logo_container {
 	padding: 50px 0px;
-	overflow: hidden;
-	flex-direction: row;
 	
-	& > *{
-		padding: 0px 20px;
-		margin-right: 50px;
+	img{
+		width: initial !important;
+	}
 		
-		img:first-child{
-			display: none;
-		}
-		
-		img:last-child{
-			display: inline-block;
-		}
-		
-		&:hover img:first-child{
-			display: inline-block;
-		}
-		
-		&:hover img:last-child{
-			display: none;
-		}
+	.col{
+		display: none !important;
+	}
+	
+	.bw{
+		display: block !important;
+	}
+	
+	.item{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.item:hover .col{
+		display: block !important;
+	}
+	
+	.item:hover .bw{
+		display: none !important;
 	}
 }
