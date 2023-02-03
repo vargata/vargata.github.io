@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
 	});
 	
 	header.addEventListener('mouseleave', function(){	
-		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 2000);
+		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 4000);
 	});
 	
 	document.addEventListener('scroll', function(){

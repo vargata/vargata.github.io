@@ -1,6 +1,23 @@
 .awards_logo_container {
 	padding: 50px 0px;
 	
+	@media (max-width: 770px){
+		display: none;
+	}
+	@media (min-width: 770px){
+		width: 720px;
+	}
+	@media (min-width:990px){
+		width: 940px;
+	}
+	@media (min-width: 1260px){		
+		width: 1170px;
+	}
+	
+	.owl1{
+		width: 2000px;
+	}
+	
 	img{
 		width: initial !important;
 	}

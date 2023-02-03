@@ -5,6 +5,42 @@
 	text-align: center;
 	min-height: 550px;
 	
+	.owl-dots {
+    	text-align: center;
+	}
+	
+	.owl-dots button.owl-dot span,
+	.owl-dots button.owl-dot:hover span{
+		background-color: transparent;
+		box-sizing: border-box;
+		border: 2px solid transparent;
+		border-radius: 50%;
+		height: 22px;
+		width: 22px;
+		position: absolute;
+		top: -10px;
+		left:-12px;
+	}
+	
+	.owl-dots button.owl-dot.active span{
+		background-color: transparent;
+		border: 2px solid #fff;
+	}
+	
+	.owl-dots button.owl-dot{
+		margin: 8px;
+		box-sizing: border-box;
+		background-color: #fff8;
+		border-radius: 50%;
+		height: 12px;
+		width: 12px;
+		position: relative;
+	}
+	
+	.owl-dots button.owl-dot.active{
+		background-color: #fff;
+	}
+	
 	.carousel_container{
 		display: inline-block;
 		position: relative;

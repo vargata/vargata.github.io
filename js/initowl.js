@@ -11,7 +11,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".owl1").owlCarousel({
 	  loop: true,
-	  items: 4,
+	  items: 9,
 	  autoplay: true,
 	  dots: false
   });
