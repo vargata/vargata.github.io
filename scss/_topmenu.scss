@@ -52,11 +52,13 @@
 
 .top_buttons_container{
 	list-style-type: none;
-	display: flex;	
+	display: flex;
+	width: 100%;
+	
 	li:first-child(){
 		display: table;
 		margin-right: auto;
-		width: 374px;
+		max-width: 374px;
 		height: 65px;
 		a{
 			display: table-cell;
@@ -105,7 +107,7 @@
 	
 	.menu_button{
 		@extend %button;
-		margin: 5px 10px;
+		margin: 5px 0px 5px 10px;
 		background-color: #333645;
 		&:hover{
 			background-color: darken(#333645, 10%);
@@ -113,7 +115,7 @@
 	}
 	
 	.search_menu{
-		margin: 0px 10px;
+
 	}
 	
 	.search_button{

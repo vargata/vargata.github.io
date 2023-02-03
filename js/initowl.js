@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(".owl").owlCarousel({
-	  loop: true,
+	  loop: false,
 	  items: 1,
 	  autoplay: true,
 	  autoplayHoverPause: true,

@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
 	});
 	
 	header.addEventListener('mouseleave', function(){	
-		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 4000);
+		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 24000);
 	});
 	
 	document.addEventListener('scroll', function(){
@@ -30,7 +30,7 @@ window.addEventListener('load', function() {
 		lastScroll = scroll;
 		
 		if(id) clearTimeout(id);
-		if(scroll > containerHeight) id = setTimeout(hideSticky, 2000);
+		if(scroll > containerHeight) id = setTimeout(hideSticky, 24000);
 	});
 	
 	function showSticky(){

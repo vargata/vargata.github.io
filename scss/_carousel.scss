@@ -5,8 +5,15 @@
 	text-align: center;
 	min-height: 550px;
 	
+	.owl{
+		min-height: 550px;
+	}
+	
 	.owl-dots {
     	text-align: center;
+		position: absolute;
+		bottom: 40px;
+		width: 100%;
 	}
 	
 	.owl-dots button.owl-dot span,
