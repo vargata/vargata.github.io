@@ -10,16 +10,19 @@ window.addEventListener('load', function() {
 	let lastScroll = 0;
 	let id = null;
 	let idPop = null;
+	let mouseover = false;
 	
 	header.addEventListener('mouseover', function(){
 		if(id) clearTimeout(id);
+		mouseover = true;
 	});
 	
 	header.addEventListener('mouseleave', function(){	
 		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 4000);
+		mouseover = false;
 	});
 	
-	document.addEventListener('scroll', function(){
+	document.addEventListener('scroll', function(e){
 		
 		var scroll = window.scrollY;
 		
@@ -31,9 +34,10 @@ window.addEventListener('load', function() {
 		}
 		
 		if(lastScroll < scroll && scroll > containerHeight)
-			hideSticky();
+			if(!mouseover)
+				hideSticky();
 			
-		if(scroll < containerHeight)
+		if(scroll == 0)
 			removeSticky();
 			
 		lastScroll = scroll;
