@@ -37,6 +37,10 @@ window.addEventListener('load', function() {
 			if(!mouseover)
 				hideSticky();
 			
+		if(scroll <= containerHeight && header.classList.contains('stickyhide')){
+			removeSticky();
+		}
+			
 		if(scroll == 0)
 			removeSticky();
 			
