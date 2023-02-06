@@ -1,4 +1,4 @@
-.carousel_header .carousel_container .carousel_content_container .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
+.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -15,14 +15,8 @@
 }
 
 .carousel_header {
-  background: no-repeat center/cover url("../img/carousel/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
-  background-blend-mode: multiply;
   display: block;
   text-align: center;
-  min-height: 550px;
-}
-
-.carousel_header .owl {
   min-height: 550px;
 }
 
@@ -65,53 +59,186 @@
   background-color: #fff;
 }
 
-.carousel_header .carousel_container {
-  display: inline-block;
-  position: relative;
-  height: 100%;
+.carousel_header .owl {
+  min-height: 550px;
 }
 
-.carousel_header .carousel_container .carousel_content_container {
+.carousel_header .carousel_container1 {
+  background: no-repeat center/cover url("../img/carousel/home-YLei.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container1 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #8158a4;
+}
+
+.carousel_header .carousel_container1 .contact_button:hover {
+  background-color: #79539a;
+}
+
+.carousel_header .carousel_container2 {
+  background: no-repeat center/cover url("../img/carousel/home-O67Y.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container2 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #7088a5;
+}
+
+.carousel_header .carousel_container2 .contact_button:hover {
+  background-color: #67809f;
+}
+
+.carousel_header .carousel_container3 {
+  background: no-repeat center/cover url("../img/carousel/home-gay8.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container3 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #2b71ca;
+}
+
+.carousel_header .carousel_container3 .contact_button:hover {
+  background-color: #286abd;
+}
+
+.carousel_header .carousel_container4 {
+  background: no-repeat center/cover url("../img/carousel/home-6yTp.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container4 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #28ae61;
+}
+
+.carousel_header .carousel_container4 .contact_button:hover {
+  background-color: #25a25a;
+}
+
+.carousel_header .carousel_container5 {
+  background: no-repeat center/cover url("../img/carousel/home-J8Xx.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container5 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #c92f2b;
+}
+
+.carousel_header .carousel_container5 .contact_button:hover {
+  background-color: #bc2c28;
+}
+
+.carousel_header .carousel_container6 {
+  background: no-repeat center/cover url("../img/carousel/home-K0pn.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container6 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #8158a4;
+}
+
+.carousel_header .carousel_container6 .contact_button:hover {
+  background-color: #79539a;
+}
+
+.carousel_header .carousel_container7 {
+  background: no-repeat center/cover url("../img/carousel/home-MSxH.webp"), linear-gradient(to right, black 0%, white 100%);
+  background-blend-mode: multiply;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.carousel_header .carousel_container7 .contact_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: #ed0a43;
+}
+
+.carousel_header .carousel_container7 .contact_button:hover {
+  background-color: #de093f;
+}
+
+.carousel_header .carousel_content_container {
   display: table-cell;
   vertical-align: middle;
   box-sizing: border-box;
-  margin: auto;
   padding: 60px 20px;
 }
 
 @media (max-width: 990px) {
-  .carousel_header .carousel_container .carousel_content_container {
+  .carousel_header .carousel_content_container {
     text-align: center;
     max-width: 750px;
   }
 }
 
 @media (min-width: 990px) {
-  .carousel_header .carousel_container .carousel_content_container {
+  .carousel_header .carousel_content_container {
     text-align: left;
     width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  .carousel_header .carousel_container .carousel_content_container {
+  .carousel_header .carousel_content_container {
     text-align: left;
     width: 1200px;
   }
 }
 
-.carousel_header .carousel_container .carousel_content_container .contact_button {
-  padding: 5px 20px;
-  font-size: 20px;
-  line-height: 50px;
-  background-color: #926fb1;
-}
-
-.carousel_header .carousel_container .carousel_content_container .contact_button:hover {
-  background-color: #8a65ac;
-}
-
-.carousel_header .carousel_container .carousel_heading {
+.carousel_header .carousel_heading {
   color: white;
   font-size: 4rem;
   font-weight: 600;
@@ -119,13 +246,13 @@
 }
 
 @media (max-width: 990px) {
-  .carousel_header .carousel_container .carousel_heading {
+  .carousel_header .carousel_heading {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 }
 
-.carousel_header .carousel_container .carousel_paragraph {
+.carousel_header .carousel_paragraph {
   color: white;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -135,13 +262,13 @@
 }
 
 @media (max-width: 990px) {
-  .carousel_header .carousel_container .carousel_paragraph {
+  .carousel_header .carousel_paragraph {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
 }
 
-.carousel_header .carousel_container .carousel_buttons {
+.carousel_header .carousel_buttons {
   width: 100%;
   display: block;
   position: absolute;
@@ -149,7 +276,7 @@
   text-align: center;
 }
 
-.carousel_header .carousel_container .carousel_buttons span {
+.carousel_header .carousel_buttons span {
   margin: 0px 10px;
   display: inline-block;
   width: 10px;
@@ -159,11 +286,11 @@
   position: relative;
 }
 
-.carousel_header .carousel_container .carousel_buttons span:first-child {
+.carousel_header .carousel_buttons span:first-child {
   background-color: white;
 }
 
-.carousel_header .carousel_container .carousel_buttons span:first-child:after {
+.carousel_header .carousel_buttons span:first-child:after {
   position: absolute;
   display: block;
   content: "";

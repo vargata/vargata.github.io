@@ -9,28 +9,37 @@ window.addEventListener('load', function() {
 	
 	let lastScroll = 0;
 	let id = null;
+	let idPop = null;
 	
 	header.addEventListener('mouseover', function(){
 		if(id) clearTimeout(id);
 	});
 	
 	header.addEventListener('mouseleave', function(){	
-		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 24000);
+		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 4000);
 	});
 	
 	document.addEventListener('scroll', function(){
+		
 		var scroll = window.scrollY;
-		if(lastScroll > scroll && scroll > containerHeight)
-			showSticky();
+		
+		if(lastScroll > scroll && scroll > containerHeight){
+			if(idPop) clearTimeout(idPop);
+			idPop = setTimeout(showSticky, 500);
+		} else if (scroll <= containerHeight){
+			if(idPop) clearTimeout(idPop);
+		}
+		
 		if(lastScroll < scroll && scroll > containerHeight)
 			hideSticky();
-		if(scroll == 0)
+			
+		if(scroll < containerHeight)
 			removeSticky();
 			
 		lastScroll = scroll;
 		
 		if(id) clearTimeout(id);
-		if(scroll > containerHeight) id = setTimeout(hideSticky, 24000);
+		if(scroll > containerHeight) id = setTimeout(hideSticky, 4000);
 	});
 	
 	function showSticky(){
