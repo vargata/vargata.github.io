@@ -1,5 +1,6 @@
 const container = document.querySelector('.sticky_container');
 const header = document.querySelector('.main_header');
+const wrapper = document.querySelector('.page_wrap');
 
 let containerHeight = 0;
 
@@ -18,13 +19,13 @@ window.addEventListener('load', function() {
 	});
 	
 	header.addEventListener('mouseleave', function(){	
-		if(window.scrollY > containerHeight) id = setTimeout(hideSticky, 4000);
+		if(wrapper.scrollTop > containerHeight) id = setTimeout(hideSticky, 4000);
 		mouseover = false;
 	});
 	
-	document.addEventListener('scroll', function(e){
+	wrapper.addEventListener('scroll', function(){
 		
-		var scroll = window.scrollY;
+		var scroll = wrapper.scrollTop;
 		
 		if(lastScroll > scroll && scroll > containerHeight){
 			if(idPop) clearTimeout(idPop);

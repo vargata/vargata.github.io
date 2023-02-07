@@ -1,0 +1,14 @@
+.sidemenu_container{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	width: 275px;
+	height: 100vh;
+	overflow-y: scroll;
+	color: white;
+	background-color: #333645;
+	
+	.sidemenu_content{
+		padding: 20px;
+	}
+}

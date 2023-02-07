@@ -3,7 +3,6 @@ $(document).ready(function(){
 	  loop: true,
 	  items: 1,
 	  autoplay: true,
-	  autoplayHoverPause: true,
 	  dotsEach: true
   });
 });
