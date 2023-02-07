@@ -1,0 +1,80 @@
+.cookie_container{
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: #0004;
+	z-index: 10;
+	
+	.cookie_menu{
+		position: fixed;		
+		left: calc(50vw - 300px);
+		width: 600px;
+		top: calc(50vh - 185px);
+		background-color: white;
+		border-radius: 5px;
+		color: gray;
+		font-weight: 200;
+		letter-spacing: .6px;
+		line-height: 30px;
+		
+		h2{
+			padding: 15px 20px;
+			font-weight: 200;
+			color: darken(gray, 20%);			
+		}
+		
+		p{
+			border-top: 1px solid lightgrey;
+			border-bottom: 1px solid lightgrey;
+			padding: 20px;
+			padding-bottom: 40px;
+		}
+		
+		a{
+			text-decoration: none;
+			color: darken(gray, 20%);
+			
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		
+		.button_container{
+			padding: 20px;
+			display: flex;
+			justify-content: space-evenly;
+			gap: 30px;
+			
+			& > *{
+				flex: 1 1 100%;
+			}
+			
+			.settings_button{
+				@extend %button;
+				padding: 5px 20px;
+				font-size: 20px;
+				line-height: 35px;
+				background-color: lighten(nth($carousel_btn_colors, 2), 5%);
+				&:hover{
+					background-color: nth($carousel_btn_colors, 2);
+					text-decoration: none;
+				}
+			}
+			
+			.cookie_button{
+				@extend %button;
+				padding: 5px 20px;
+				font-size: 20px;
+				line-height: 35px;
+				background-color: lighten(nth($carousel_btn_colors, 1), 3%);
+				&:hover{
+					background-color: nth($carousel_btn_colors, 1);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

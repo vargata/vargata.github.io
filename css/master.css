@@ -1,4 +1,4 @@
-.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button {
+.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button, .cookie_container .cookie_menu .button_container .settings_button, .cookie_container .cookie_menu .button_container .cookie_button {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -3261,6 +3261,87 @@
 
 .awards_logo_container .item:hover .bw {
   display: none !important;
+}
+
+.cookie_container {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0004;
+  z-index: 10;
+}
+
+.cookie_container .cookie_menu {
+  position: fixed;
+  left: calc(50vw - 300px);
+  width: 600px;
+  top: calc(50vh - 185px);
+  background-color: white;
+  border-radius: 5px;
+  color: gray;
+  font-weight: 200;
+  letter-spacing: .6px;
+  line-height: 30px;
+}
+
+.cookie_container .cookie_menu h2 {
+  padding: 15px 20px;
+  font-weight: 200;
+  color: #4d4d4d;
+}
+
+.cookie_container .cookie_menu p {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.cookie_container .cookie_menu a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.cookie_container .cookie_menu a:hover {
+  text-decoration: underline;
+}
+
+.cookie_container .cookie_menu .button_container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.cookie_container .cookie_menu .button_container > * {
+  flex: 1 1 100%;
+}
+
+.cookie_container .cookie_menu .button_container .settings_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 35px;
+  background-color: #778da9;
+}
+
+.cookie_container .cookie_menu .button_container .settings_button:hover {
+  background-color: #67809f;
+  text-decoration: none;
+}
+
+.cookie_container .cookie_menu .button_container .cookie_button {
+  padding: 5px 20px;
+  font-size: 20px;
+  line-height: 35px;
+  background-color: #8158a4;
+}
+
+.cookie_container .cookie_menu .button_container .cookie_button:hover {
+  background-color: #79539a;
+  text-decoration: none;
 }
 
 .icons {
