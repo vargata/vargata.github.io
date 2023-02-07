@@ -1,6 +1,10 @@
 .cookie_container{
+	box-sizing: border-box;
 	display: none;
 	position: fixed;
+	padding: 30px;
+	justify-content: center;
+	align-items: center;
 	left: 0px;
 	top: 0px;
 	width: 100vw;
@@ -9,16 +13,18 @@
 	z-index: 10;
 	
 	.cookie_menu{
-		position: fixed;		
-		left: calc(50vw - 300px);
-		width: 600px;
-		top: calc(50vh - 185px);
 		background-color: white;
 		border-radius: 5px;
 		color: gray;
 		font-weight: 200;
 		letter-spacing: .6px;
 		line-height: 30px;
+		max-height: 90vh;
+		overflow-y: scroll;
+		
+		@media(min-width: 771px){			
+			width: 600px;
+		}
 		
 		h2{
 			padding: 15px 20px;
@@ -45,8 +51,14 @@
 		.button_container{
 			padding: 20px;
 			display: flex;
+			
+			@media(max-width: 770px){
+				flex-wrap: wrap;
+			}
+			
 			justify-content: space-evenly;
-			gap: 30px;
+			column-gap: 30px;
+			row-gap: 10px;
 			
 			& > *{
 				flex: 1 1 100%;

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	let cookie = document.cookie;
 	
 	if (!cookie.split(';').some((item) => item.trim().startsWith('cookies='))) {
-		document.querySelector('.cookie_container').style.display = "block";
+		document.querySelector('.cookie_container').style.display = "flex";
 	}
 })
 
