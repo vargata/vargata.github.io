@@ -1,12 +1,17 @@
 const page = document.querySelector('.page_container');
 const sidemenu = document.querySelector('.sidemenu_container');
+const overlay = document.querySelector('.overlay');
+const hamburger = document.querySelector('.hamburger');
 
-document.querySelector('.hamburger').addEventListener('click', function(){
-	if(this.classList.contains('is-active')) {
-		this.classList.remove('is-active');
-		page.style.transform = null;
-	} else {
-		this.classList.add('is-active');	
-		page.style.transform = 'translateX(-275px)';
-	}
+
+hamburger.addEventListener('click', function(){
+	hamburger.classList.add('is-active');	
+	page.style.transform = 'translateX(-275px)';
+	overlay.style.display = 'block';
+})
+
+overlay.addEventListener('click', function(){
+	hamburger.classList.remove('is-active');
+	overlay.style.display = 'none';
+	page.style.transform = null;
 })

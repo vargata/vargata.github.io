@@ -3444,6 +3444,17 @@
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0004;
+  z-index: 10;
+}
+
 .sidemenu_container {
   position: fixed;
   right: 0px;
@@ -3484,13 +3495,13 @@ body {
 .page_container {
   transition: all .5s;
   overflow-y: hidden;
+  position: relative;
   max-height: 100vh;
 }
 
 .page_wrap {
   width: 100%;
   max-height: 100vh;
-  position: relative;
   overflow-y: scroll;
   background-color: white;
   z-index: 1;
@@ -3510,7 +3521,7 @@ body {
 }
 
 .stickyshow {
-  position: fixed;
+  position: absolute;
   top: -206px;
   transition: transform .5s;
   transform: translateY(206px);
@@ -3518,7 +3529,7 @@ body {
 }
 
 .stickyhide {
-  position: fixed;
+  position: absolute;
   top: -206px;
   transition: transform .5s;
   transform: translateY(0px);
