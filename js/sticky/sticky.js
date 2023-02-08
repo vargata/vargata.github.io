@@ -55,6 +55,7 @@ window.addEventListener('load', function() {
 		if(!header.classList.contains('stickyshow')){
 			header.classList.remove('stickyhide');
 			header.classList.add('stickyshow');
+			header.style.width = wrapper.clientWidth.toString()+"px";
 		}
 	}
 	
@@ -69,6 +70,7 @@ window.addEventListener('load', function() {
 		if(header.classList.contains('stickyshow') || header.classList.contains('stickyhide')){
 			header.classList.remove('stickyshow');
 			header.classList.remove('stickyhide');
+			header.style.width = null;
 		}
 	}
 
@@ -76,5 +78,6 @@ window.addEventListener('load', function() {
 
 window.addEventListener('resize', function() {
 	containerHeight = parseFloat(getComputedStyle(header).height);
-	container.style.height = containerHeight.toString() + "px";
+	container.style.height = containerHeight.toString() + "px";	
+	header.style.width = wrapper.clientWidth.toString()+"px";
 });
