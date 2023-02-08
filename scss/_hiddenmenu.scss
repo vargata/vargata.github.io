@@ -1,9 +1,3 @@
-.hidden_menu_header{
-	margin: 0 0 2rem 0;
-	font-size: 32px;
-	color: white;
- }
-
 @for $i from 1 through 7{
 	.sec_menu_content#{$i}{
 		background-color: nth($menu_bg_colors, $i);
@@ -26,6 +20,12 @@
 				width: 1200px;	
 			}
 		}
+		
+		.hidden_menu_header{
+			margin: 0 0 2rem 0;
+			font-size: 32px;
+			color: white;
+		 }
 		
 		a:hover{
 			text-decoration: underline;
@@ -118,6 +118,7 @@
 	@media (max-width: 990px){
 		display: none;
 	}
+	position: relative;
 }
 
 .sec_button_list{

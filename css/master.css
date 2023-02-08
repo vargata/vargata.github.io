@@ -302,12 +302,6 @@
   border: 2px solid white;
 }
 
-.hidden_menu_header {
-  margin: 0 0 2rem 0;
-  font-size: 32px;
-  color: white;
-}
-
 .sec_menu_content1 {
   background-color: #67809f;
   display: none;
@@ -334,6 +328,12 @@
   .sec_menu_content1 > div {
     width: 1200px;
   }
+}
+
+.sec_menu_content1 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
 }
 
 .sec_menu_content1 a:hover {
@@ -451,6 +451,12 @@
   }
 }
 
+.sec_menu_content2 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
+}
+
 .sec_menu_content2 a:hover {
   text-decoration: underline;
 }
@@ -564,6 +570,12 @@
   .sec_menu_content3 > div {
     width: 1200px;
   }
+}
+
+.sec_menu_content3 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
 }
 
 .sec_menu_content3 a:hover {
@@ -681,6 +693,12 @@
   }
 }
 
+.sec_menu_content4 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
+}
+
 .sec_menu_content4 a:hover {
   text-decoration: underline;
 }
@@ -794,6 +812,12 @@
   .sec_menu_content5 > div {
     width: 1200px;
   }
+}
+
+.sec_menu_content5 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
 }
 
 .sec_menu_content5 a:hover {
@@ -911,6 +935,12 @@
   }
 }
 
+.sec_menu_content6 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
+}
+
 .sec_menu_content6 a:hover {
   text-decoration: underline;
 }
@@ -1026,6 +1056,12 @@
   }
 }
 
+.sec_menu_content7 .hidden_menu_header {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  color: white;
+}
+
 .sec_menu_content7 a:hover {
   text-decoration: underline;
 }
@@ -1119,6 +1155,7 @@
 
 .sec_button_container {
   text-align: center;
+  position: relative;
 }
 
 @media (max-width: 990px) {
@@ -3474,7 +3511,6 @@
   position: fixed;
   right: 0px;
   top: 0px;
-  width: 275px;
   height: 100vh;
   overflow-y: scroll;
   color: white;
@@ -3482,7 +3518,60 @@
 }
 
 .sidemenu_container .sidemenu_content {
-  padding: 20px;
+  box-sizing: content-box;
+  width: 216px;
+  padding: 21px;
+}
+
+.sidemenu_container .sidemenu_content ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.sidemenu_container .sidemenu_content > ul > li {
+  padding-top: 20px;
+}
+
+.sidemenu_container .sidemenu_content > ul > li > a {
+  display: block;
+  font-size: 18px;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidemenu_container .sidemenu_content > ul .sub-menu-banner {
+  border-radius: 3px;
+  padding: 20px 0px;
+}
+
+.sidemenu_container .sidemenu_content > ul .sub-menu-banner > ul {
+  background-color: #262834;
+}
+
+.sidemenu_container .sidemenu_content > ul .sub-menu-banner > ul > li {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.sidemenu_container .sidemenu_content > ul .sub-menu-banner > ul > li:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.sidemenu_container .sidemenu_content > ul .sub-menu-banner-title {
+  display: none;
+}
+
+.sidemenu_container .sidemenu_content > ul .icon-apps:before {
+  content: "\E901";
+}
+
+.sidemenu_container .sidemenu_content > ul .link-icon-container {
+  display: none;
 }
 
 .icons {

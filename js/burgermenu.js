@@ -5,7 +5,7 @@ const hamburger = document.querySelector('.hamburger');
 
 
 hamburger.addEventListener('click', function(){
-	hamburger.classList.add('is-active');	
+	hamburger.classList.add('is-active');
 	page.style.transform = 'translateX(-275px)';
 	overlay.style.display = 'block';
 })
