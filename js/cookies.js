@@ -11,6 +11,6 @@ const cookie_button = document.querySelector('.cookie_button');
 cookie_button.addEventListener('click', function(){
 	let expDate = new Date();
 	expDate.setDate(expDate.getDate() + 30);
-	document.cookie = "cookies=accepted; expires=" + expDate + "; path=/";
+	document.cookie = "cookies=accepted; expires=" + expDate + "; path=/netmatters/";
 	document.querySelector('.cookie_container').style.display = "none";
 })
