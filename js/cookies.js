@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 const cookie_button = document.querySelector('.cookie_button');
 
 cookie_button.addEventListener('click', function(){
-	let expDate = new Date();
-	expDate.setDate(expDate.getDate() + 30);
-	document.cookie = "cookies=accepted; expires=" + expDate + "; path=/netmatters/";
+	let now = new Date();
+	document.cookie = "cookies=accepted; expires=" +  new Date(now.setDate(now.getDate() + 30)).toUTCString() + "path=/netmatters/";
 	document.querySelector('.cookie_container').style.display = "none";
 })
