@@ -8,7 +8,7 @@
 									<li><a href="#"><img alt="" src="img/f-logo.png" /></a></li>
 									<li><a href="#" class="tel_button"><i class="fa-solid fa-phone-volume"></i></a></li>
 									<li><a href="#" class="support_button"><i class="icons fa-solid fa-computer-mouse"></i> Support</a></li>
-									<li><a href="#" class="contact_button"><i class="icons fa-regular fa-paper-plane"></i> Contact</a></li>
+									<li><a href="?page=contact-us" class="contact_button"><i class="icons fa-regular fa-paper-plane"></i> Contact</a></li>
 									<li class="search_menu"><input type="text" class="search_field" placeholder="Search..."/><a href="#"  class="search_button"><i class="icons fa-solid fa-magnifying-glass"></i></a></li>
 									<li>
 										<button class="hamburger hamburger--spin" type="button">
