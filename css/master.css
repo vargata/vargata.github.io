@@ -1,4 +1,4 @@
-.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button, .cookie_container .cookie_menu .button_container .settings_button, .cookie_container .cookie_menu .button_container .cookie_button {
+.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button, .cookie_container .cookie_menu .button_container .settings_button, .cookie_container .cookie_menu .button_container .cookie_button, .contact_container .form_container > form input[type="submit"] {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -3572,6 +3572,151 @@
 
 .sidemenu_container .sidemenu_content > ul .link-icon-container {
   display: none;
+}
+
+.contact_container {
+  display: flex;
+  width: 100%;
+  color: #333645;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 990px) {
+  .contact_container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 990px) {
+  .contact_container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .contact_container {
+    width: 1200px;
+  }
+}
+
+.contact_container a {
+  text-decoration: underline;
+  color: #333645;
+}
+
+.contact_container a:hover {
+  color: #282b36;
+}
+
+.contact_container .email_container {
+  display: block;
+  flex: 1 1 0%;
+  border-radius: 10px;
+  padding: 0px 30px;
+}
+
+.contact_container .form_container {
+  flex: 2 2 0%;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #e6e7e9;
+}
+
+.contact_container .form_container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container .form_container > form input[type="submit"] {
+  font-size: 17px;
+  line-height: 35px;
+  outline: none;
+  border: none;
+  background-color: #333645;
+}
+
+.contact_container .form_container > form input[type="submit"]:hover {
+  background-color: #1d1f28;
+}
+
+.contact_container .form_container > form input[type="checkbox"] {
+  display: block;
+  min-width: 30px;
+  height: 30px;
+  appearance: none;
+  outline: none;
+  border: 3px solid #333645;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contact_container .form_container > form input[type="checkbox"]:checked {
+  background-color: #333645;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact_container .form_container > form input[type="checkbox"]:checked:after {
+  font: var(--fa-font-solid);
+  content: "\f00c";
+}
+
+.contact_container .form_container > form input[type="text"],
+.contact_container .form_container > form input[type="email"] {
+  box-sizing: border-box;
+  line-height: 35px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: 1px solid lightgray;
+}
+
+.contact_container .form_container > form input[type="text"]:focus,
+.contact_container .form_container > form input[type="email"]:focus {
+  border: 1px solid lightgray;
+  outline: none;
+  box-shadow: 0px 0px 10px 1px rgba(80, 200, 255, 0.8);
+}
+
+.contact_container .form_container > form label {
+  font-size: 15px;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.contact_container .form_container > form .required::after {
+  content: " *";
+  color: #d24d57;
+}
+
+.contact_container .form_container > form .reqtext::before {
+  content: "* ";
+  color: #d24d57;
+}
+
+.contact_container .form_container > form > .row {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.contact_container .form_container > form > .row > .col {
+  display: flex;
+  flex: 1 1 0%;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.contact_container .form_container > form > .row > span {
+  display: inline-block;
 }
 
 .icons {

@@ -1,0 +1,135 @@
+.contact_container{
+	display: flex;
+	width: 100%;
+	color: #333645;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	
+	@media (max-width: 990px){
+		max-width: 750px;
+	}
+	@media (min-width:990px){
+		width: 970px;
+	}
+	@media (min-width: 1260px){		
+		width: 1200px;	
+	}
+	margin: auto;
+	padding: 3rem 1rem;
+	
+	a{
+		text-decoration: underline;
+		color: #333645;
+	}
+	
+	a:hover{
+		color: darken(#333645, 5%);
+	}
+
+	.email_container{
+		display: block;
+		flex: 1 1 0%;
+		border-radius: 10px;
+		padding: 0px 30px;
+	}
+	
+	.form_container{
+		flex: 2 2 0%;
+		border-radius: 10px;
+		padding: 30px;
+		background-color: #e6e7e9;;
+		
+		&>form{			
+			display: flex;
+			flex-direction: column;
+			
+			input[type="submit"]{
+				@extend %button;
+				font-size: 17px;
+				line-height: 35px;
+				outline: none;
+				border: none;
+				background-color: #333645;
+			
+				&:hover{
+					background-color: darken(#333645, 10%);
+				}
+			} 
+
+			input[type="checkbox"]{
+				display: block;
+				min-width: 30px;
+				height:30px;
+				appearance: none;
+				outline: none;
+				border: 3px solid #333645;
+				border-radius: 4px;
+				cursor: pointer;
+				display: inline-block;
+				
+				&:checked{
+					background-color: #333645;
+					color: white;
+					font-size: 16px;
+					text-align: center;
+					&:after{
+						font: var(--fa-font-solid);
+	    				content: "\f00c";
+					}
+				}
+			}
+			
+			input[type="text"],
+			input[type="email"]{
+			box-sizing: border-box;
+			line-height: 35px;
+			width: 100%;
+			border-radius: 3px;
+			padding: 5px 15px;
+			border: 1px solid lightgray;
+			
+			&:focus{
+				border: 1px solid lightgray;
+				outline: none;
+				box-shadow: 0px 0px 10px 1px rgba(rgb(80, 200, 255), 0.8);
+			}
+		}
+		
+			label{
+				font-size: 15px;
+				line-height: 2rem;
+				font-weight: 600;
+				letter-spacing: 1.2px;
+				cursor: pointer;
+			}
+
+			.required::after{
+				content: " *";
+				color: #d24d57;
+			}
+			
+			.reqtext::before{
+				content: "* ";
+				color: #d24d57;
+			}
+
+			&>.row{
+				width: 100%;
+				display: flex;
+				gap: 30px;
+				flex-wrap: nowrap;
+				
+				&>.col{
+					display: flex;
+					flex: 1 1 0%;
+					flex-wrap: nowrap;
+					flex-direction: column;
+				}
+				
+				&>span{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
