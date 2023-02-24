@@ -7,7 +7,7 @@ class db
     const db_host = "localhost";
     const db_name = "db_netmatters";
     const db_user = "contact_user";
-    const db_pwd = "contact_pwd";
+    const db_pwd = "contactpwd";
     
     private $sql_list = array();
     private $param_list = array();
@@ -16,8 +16,8 @@ class db
         $this->sql_list[$sql_name] = $sql;
     }
     
-    function add_params($sql_name, array $params){
-        $this->param_list[$sql_name] = $params;
+    function add_params($sql_name, string $type_string, array $params){
+        $this->param_list[$sql_name] = array("type_string" => $type_string, "params" => $params);
     }
     
     function connect_db(){
@@ -34,10 +34,13 @@ class db
             
             $sql = $this->sql_list[$sql_name];
             $stmt = mysqli_prepare($this->conn, $sql);
-            $stmt->bind_param($paramstring, $this->param_list[$sql_name]);
+            if(isset($this->param_list[$sql_name])){
+                $stmt->bind_param($this->param_list[$sql_name]["type_string"], $this->param_list[$sql_name]["params"]);
+            }
             $stmt->execute();
+            $result = $stmt->get_result();
             
-            while($row = mysqli_fetch_all($result))
+            while($row = mysqli_fetch_row($result))
             {
                 $returndata[] = $row;
             }

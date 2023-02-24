@@ -1,3 +1,5 @@
+<?php require_once 'db.php';?>
+
 <!doctype html>
 <html lang="en">
 <?php include('head.php'); ?>
