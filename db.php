@@ -21,10 +21,16 @@ class db
     }
     
     function connect_db(){
-        mysqli_report(MYSQLI_REPORT_OFF);
+        //mysqli_report(MYSQLI_REPORT_OFF);
         $this->conn = @mysqli_connect(self::db_host, self::db_user, self::db_pwd, self::db_name);
         if(!$this->conn){
             echo "<label class='msglabel'>"."Connection error\nPlease try again later"."</label>".PHP_EOL;
+        }
+    }
+    
+    function disconnect_db(){
+        if(!$this->conn){
+            $this->conn->close();
         }
     }
     
@@ -40,10 +46,14 @@ class db
             $stmt->execute();
             $result = $stmt->get_result();
             
-            while($row = mysqli_fetch_row($result))
-            {
-                $returndata[] = $row;
+            $counter = 0;
+            while($row = $result->fetch_assoc()){
+                foreach($row as $key => $value)
+                    $returndata["row" . $counter][$key] = $value;
+                $counter++;
             }
+            
+            $stmt->close();
             return $returndata;
         }
     }
