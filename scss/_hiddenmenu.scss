@@ -1,13 +1,14 @@
 @for $i from 1 through 7{
 	.sec_menu_content#{$i}{
 		background-color: nth($menu_bg_colors, $i);
-		display: none;
+		visibility: hidden;
 		position: absolute;
 		left: 0px;
 		right: 0px;
 		text-align: left;
 		padding: 3rem 0px;
 		text-transform: capitalize;
+		transition-property: visibility;
 		z-index: 2;
 		
 		&>div{
@@ -57,8 +58,18 @@
 			}
 		}
 
-		.sec_button#{$i}:hover &{
-			display: block;
+		.sec_button#{$i}:hover &{		
+			animation: 0.5s fadeIn;
+  			animation-fill-mode: forwards;
+  			
+  			@keyframes fadeIn {
+				99% {
+					visibility: hidden;
+				}
+				100% {
+					visibility: visible;
+				}
+			}
 		}
 	}
 	

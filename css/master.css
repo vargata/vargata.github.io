@@ -304,13 +304,14 @@
 
 .sec_menu_content1 {
   background-color: #67809f;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -367,7 +368,17 @@
 }
 
 .sec_button1:hover .sec_menu_content1 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div1 {
@@ -425,13 +436,14 @@
 
 .sec_menu_content2 {
   background-color: #286abd;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -488,7 +500,17 @@
 }
 
 .sec_button2:hover .sec_menu_content2 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div2 {
@@ -546,13 +568,14 @@
 
 .sec_menu_content3 {
   background-color: #25a25a;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -609,7 +632,17 @@
 }
 
 .sec_button3:hover .sec_menu_content3 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div3 {
@@ -667,13 +700,14 @@
 
 .sec_menu_content4 {
   background-color: #bc2c28;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -730,7 +764,17 @@
 }
 
 .sec_button4:hover .sec_menu_content4 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div4 {
@@ -788,13 +832,14 @@
 
 .sec_menu_content5 {
   background-color: #79539a;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -851,7 +896,17 @@
 }
 
 .sec_button5:hover .sec_menu_content5 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div5 {
@@ -909,13 +964,14 @@
 
 .sec_menu_content6 {
   background-color: #de093f;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -972,7 +1028,17 @@
 }
 
 .sec_button6:hover .sec_menu_content6 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div6 {
@@ -1030,13 +1096,14 @@
 
 .sec_menu_content7 {
   background-color: #a3331d;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: 0px;
   right: 0px;
   text-align: left;
   padding: 3rem 0px;
   text-transform: capitalize;
+  transition-property: visibility;
   z-index: 2;
 }
 
@@ -1093,7 +1160,17 @@
 }
 
 .sec_button7:hover .sec_menu_content7 {
-  display: block;
+  animation: 0.5s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .arrow_div7 {
