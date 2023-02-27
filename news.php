@@ -20,7 +20,7 @@
 						</div>
 						<a href="#" class="news_block">
 							<div>
-								<h3><?php echo $row["news_title"]; ?></h3>
+								<h3><?php echo $row["news_title"]; for($i = strlen($row["news_title"]); $i < 50; $i++) echo "&nbsp;"; ?></h3>
 								<p><?php echo $row["news_content"]; ?></p>
 								<span>Read more</span>
 							</div>
