@@ -1,0 +1,157 @@
+.office_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	gap: 30px;
+	width: 1170px;
+	padding: 1rem 1rem;
+	
+	@media (max-width:1260px){
+		width: 970px;
+	}
+	@media (max-width: 990px){
+		width: 750px;
+	}
+	@media (max-width: 770px){
+		width: 90%;
+		max-width: 750px;
+	}
+	
+	img{
+		width: 100%;
+	}
+	
+	&>*{
+		width: 560px;
+		@media (max-width:1260px){
+			width: 460px;
+		}
+		@media (max-width: 990px){
+			width: 720px;
+		}
+		@media (max-width: 770px){
+			max-width: 720px;
+		}
+
+		border-radius: 20px;
+		border: 1px solid #ccc;
+		box-shadow: 0px 0px 30px 5px #ccc9;
+		overflow: hidden;
+
+		p{
+			font-weight: 400;
+			display: block;
+			padding: 15px 30px 30px 30px;
+			font-size: 13px;
+			line-height: 22px;
+			color: #666;
+		}
+		
+		h2{
+			a{
+				font-weight: 400;
+				display: inline-block;
+				padding: 30px 30px 15px 30px;
+				font-size: 20px;
+				line-height: 22px;
+				color: #333645;
+				text-decoration: none;
+				
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.saleslink{
+			display: block;
+			box-sizing: border-box;
+			color: #926fb1 !important;
+			font-weight: 600;
+			text-decoration: none;
+			font-size: 26px;
+			padding: 10px 0px 0px 0px;
+			
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		
+		.btn_offices{
+			@extend %button;
+			font-size: 17px;
+			line-height: 35px;
+			outline: none;
+			border: none;
+			background-color: #926fb1;
+		
+			&:hover{
+				background-color: darken(#926fb1, 10%);
+			}
+		}
+	}
+}
+
+.title_container{	
+	@media (max-width: 770px){
+		background-color: black;
+		color: white;
+	}
+	width: 100%;
+	
+	.office_title{	
+		
+		width: 1170px;
+		@media (max-width:1260px){
+			width: 970px;
+		}
+		@media (max-width: 990px){
+			width: 750px;
+		}
+		@media (max-width: 770px){
+			width: 90%;
+			max-width: 750px;
+		}
+		margin: auto;
+		
+		h1{
+			font-weight: 400;
+			padding: 20px 0px;
+		}
+	}
+}
+
+.nav_container{
+	width: 100%;
+	box-shadow: 0px 0px 30px 5px #ccc9;
+	
+	.office_nav{	
+		width: 1170px;
+		@media (max-width:1260px){
+			width: 970px;
+		}
+		@media (max-width: 990px){
+			width: 750px;
+		}
+		@media (max-width: 770px){
+			display: none;
+		}
+		margin: auto;
+		display: flex;
+		list-style: none;
+		padding: 10px 0px;
+		font-size: 13px;
+		
+		a{
+			color: #666 !important;
+			text-decoration: none;
+			font-size: 13px;
+			font-weight: 700;
+			
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -6,7 +6,7 @@
 				<div class="contact_container">
 					<div class="email_container">
 						<p><strong>Email us on:</strong><br></p>
-						<p class="saleslink"><a href="#">sales@netmatters.com</a></p>
+						<p><a href="#" class="saleslink">sales@netmatters.com</a></p>
 						<p><strong>Business hours:</strong></p>
 						<p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
 

@@ -1,6 +1,11 @@
 	<head>
 		<title>
-            Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters
+<?php
+if(isset($_GET['page']))
+    echo "Contact Us | Netmatters";
+else
+    echo "Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters";
+?>
 		</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />

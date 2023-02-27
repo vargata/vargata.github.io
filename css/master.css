@@ -1,4 +1,4 @@
-.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button, .cookie_container .cookie_menu .button_container .settings_button, .cookie_container .cookie_menu .button_container .cookie_button, .contact_container .form_container > form input[type="submit"] {
+.carousel_header .carousel_container1 .contact_button, .carousel_header .carousel_container2 .contact_button, .carousel_header .carousel_container3 .contact_button, .carousel_header .carousel_container4 .contact_button, .carousel_header .carousel_container5 .contact_button, .carousel_header .carousel_container6 .contact_button, .carousel_header .carousel_container7 .contact_button, .top_buttons_container .tel_button, .top_buttons_container .contact_button, .top_buttons_container .support_button, .top_buttons_container .menu_button, .top_buttons_container .search_button, .newsletter_container > div input[type="submit"], .services_container .services_content1 span, .services_container .services_content2 span, .services_container .services_content3 span, .services_container .services_content4 span, .services_container .services_content5 span, .services_container .services_content6 span, .services_container .services_content7 span, .news_container .news_content1 .img_header .img_button, .news_container .news_content1 .news_block span, .news_container .news_content2 .img_header .img_button, .news_container .news_content2 .news_block span, .news_container .news_content3 .img_header .img_button, .news_container .news_content3 .news_block span, .reviews_container .flex_box .flex_item .buttons .rm_button, .reviews_container .flex_box .flex_item .buttons .google_button, .reviews_container .flex_box .flex_item .buttons .tp_button, .cookie_container .cookie_menu .button_container .settings_button, .cookie_container .cookie_menu .button_container .cookie_button, .contact_container .form_container > form input[type="submit"], .office_container > * .btn_offices {
   display: inline-block;
   text-transform: uppercase;
   font-family: Poppins,sans-serif;
@@ -3657,9 +3657,9 @@
   color: #333645;
   flex-direction: row-reverse;
   justify-content: space-between;
-  width: 1200px;
+  width: 1170px;
   margin: auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 @media (max-width: 1260px) {
@@ -3722,14 +3722,14 @@
   overflow: hidden;
 }
 
-.contact_container .email_container .saleslink a {
+.contact_container .email_container .saleslink {
   color: #926fb1 !important;
   font-weight: 600;
   text-decoration: none;
   font-size: 26px;
 }
 
-.contact_container .email_container .saleslink a:hover {
+.contact_container .email_container .saleslink:hover {
   text-decoration: underline;
 }
 
@@ -3874,6 +3874,197 @@
   .contact_container .form_container > form > .row {
     flex-direction: column;
   }
+}
+
+.office_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 30px;
+  width: 1170px;
+  padding: 1rem 1rem;
+}
+
+@media (max-width: 1260px) {
+  .office_container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 990px) {
+  .office_container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 770px) {
+  .office_container {
+    width: 90%;
+    max-width: 750px;
+  }
+}
+
+.office_container img {
+  width: 100%;
+}
+
+.office_container > * {
+  width: 560px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 30px 5px #ccc9;
+  overflow: hidden;
+}
+
+@media (max-width: 1260px) {
+  .office_container > * {
+    width: 460px;
+  }
+}
+
+@media (max-width: 990px) {
+  .office_container > * {
+    width: 720px;
+  }
+}
+
+@media (max-width: 770px) {
+  .office_container > * {
+    max-width: 720px;
+  }
+}
+
+.office_container > * p {
+  font-weight: 400;
+  display: block;
+  padding: 15px 30px 30px 30px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #666;
+}
+
+.office_container > * h2 a {
+  font-weight: 400;
+  display: inline-block;
+  padding: 30px 30px 15px 30px;
+  font-size: 20px;
+  line-height: 22px;
+  color: #333645;
+  text-decoration: none;
+}
+
+.office_container > * h2 a:hover {
+  text-decoration: underline;
+}
+
+.office_container > * .saleslink {
+  display: block;
+  box-sizing: border-box;
+  color: #926fb1 !important;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 26px;
+  padding: 10px 0px 0px 0px;
+}
+
+.office_container > * .saleslink:hover {
+  text-decoration: underline;
+}
+
+.office_container > * .btn_offices {
+  font-size: 17px;
+  line-height: 35px;
+  outline: none;
+  border: none;
+  background-color: #926fb1;
+}
+
+.office_container > * .btn_offices:hover {
+  background-color: #79539a;
+}
+
+.title_container {
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  .title_container {
+    background-color: black;
+    color: white;
+  }
+}
+
+.title_container .office_title {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1260px) {
+  .title_container .office_title {
+    width: 970px;
+  }
+}
+
+@media (max-width: 990px) {
+  .title_container .office_title {
+    width: 750px;
+  }
+}
+
+@media (max-width: 770px) {
+  .title_container .office_title {
+    width: 90%;
+    max-width: 750px;
+  }
+}
+
+.title_container .office_title h1 {
+  font-weight: 400;
+  padding: 20px 0px;
+}
+
+.nav_container {
+  width: 100%;
+  box-shadow: 0px 0px 30px 5px #ccc9;
+}
+
+.nav_container .office_nav {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 10px 0px;
+  font-size: 13px;
+}
+
+@media (max-width: 1260px) {
+  .nav_container .office_nav {
+    width: 970px;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav_container .office_nav {
+    width: 750px;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav_container .office_nav {
+    display: none;
+  }
+}
+
+.nav_container .office_nav a {
+  color: #666 !important;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav_container .office_nav a:hover {
+  text-decoration: underline;
 }
 
 .icons {

@@ -4,7 +4,7 @@
 	color: #333645;
 	flex-direction: row-reverse;
 	justify-content: space-between;	
-	width: 1200px;
+	width: 1170px;
 	
 	@media (max-width: 1260px){
 		flex-direction: column;
@@ -22,7 +22,7 @@
 	}
 	
 	margin: auto;
-	padding: 3rem 1rem;
+	padding: 2rem 1rem;
 	
 	a{
 		text-decoration: underline;
@@ -58,7 +58,7 @@
 			overflow: hidden;
 		}
 		
-		.saleslink a{
+		.saleslink{
 			color: #926fb1 !important;
 			font-weight: 600;
 			text-decoration: none;
