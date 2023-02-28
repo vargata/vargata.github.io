@@ -35,7 +35,7 @@
 					</div>
 
 					<div class="form_container">
-						<form method="POST" action="https://www.netmatters.co.uk/enquiry#contact-form" accept-charset="UTF-8" novalidate="novalidate">
+						<form method="POST" action="?page=formhandler"  accept-charset="UTF-8" novalidate="novalidate">
 							<div class="row">
 								<div class="col">
         							<label for="name" class="required">Your Name</label>
@@ -49,11 +49,11 @@
 							<div class="row">
 								<div class="col">
         							<label for="email" class="required">Your Email</label>
-        							<input name="email" type="email" value="" id="email">
+        							<input name="email" type="text" value="" id="email">
         						</div>
 								<div class="col">
-        							<label for="telephone" class="required">Your Telephone Number</label>
-        							<input name="telephone" type="text" value="" id="telephone">
+        							<label for="phone" class="required">Your Telephone Number</label>
+        							<input name="phone" type="text" value="" id="telephone">
         						</div>        							
 							</div>
 							<div class="row">
@@ -70,10 +70,10 @@
 							</div>
 							<div class="row1">
 								<span>
-        							<input name="marketing_preference" type="checkbox" value="1">
+        							<input name="marketing" type="checkbox" value="1">
         						</span>
         						<span>
-        							<label for="marketing_preference">Please tick this box if you wish to receive marketing information from us.
+        							<label for="marketing">Please tick this box if you wish to receive marketing information from us.
         							Please see our <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a> for more information on how we keep your data safe.</label>
         						</span>
 							</div>

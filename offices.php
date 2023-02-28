@@ -51,7 +51,7 @@
         	</div>
     	</div>
         <div>        
-            <a href="/cambridge-office">
+            <a href="#">
                 <img src="img/offices/cambridge.jpg" alt="Cambridge Office" class="img-full">
             </a>
             <h2>
@@ -71,7 +71,7 @@
                 <br>
                 CB4 0WS
             	<br>
-                <a href="tel:01223375772" class="saleslink">
+                <a href="#" class="saleslink">
                     01223 37 57 72
                 </a>
                 <br>
@@ -91,7 +91,7 @@
         	</div>
     	</div>
         <div> 
-            <a href="/wymondham-office">
+            <a href="#">
             	<img src="img/offices/wymondham.jpg" alt="Wymondham Office" class="img-full">
             </a>
             <h2>
@@ -110,7 +110,7 @@
                 <br>
                 NR18 0WZ
             	<br>
-                <a href="tel:01603704020" class="saleslink">
+                <a href="#" class="saleslink">
                     01603 70 40 20
                 </a>
                 <br>
@@ -130,7 +130,7 @@
         </div>
     	</div>
         <div>
-            <a href="/yarmouth-office">
+            <a href="#">
                 <img src="img/offices/yarmouth-2.jpg" alt="Great Yarmouth Office" class="img-full">
             </a>
             <h2>
@@ -149,7 +149,7 @@
                 <br>
                 NR31 7RA
             	<br>
-                <a href="tel:01493603204" class="saleslink">
+                <a href="#" class="saleslink">
                     01493 60 32 04
                 </a>
                 <br>

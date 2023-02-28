@@ -41,7 +41,7 @@ class db
             $sql = $this->sql_list[$sql_name];
             $stmt = mysqli_prepare($this->conn, $sql);
             if(isset($this->param_list[$sql_name])){
-                $stmt->bind_param($this->param_list[$sql_name]["type_string"], $this->param_list[$sql_name]["params"]);
+                $stmt->bind_param($this->param_list[$sql_name]["type_string"], ...$this->param_list[$sql_name]["params"]);
             }
             $stmt->execute();
             $result = $stmt->get_result();
@@ -58,16 +58,18 @@ class db
         }
     }
     
-    Function save_Data($fname, $sname, $email, $phone, $subject, $message){
+    Function save_Data($sql_name){
         $returndata = false;
         if($this->conn){
-            $sql_savedata = "CALL add_Message(?, ?, ?, ?, ?, ?)";
-            //$returndata = $this->conn->query($sql_savedata);
-            $stmt = mysqli_prepare($this->conn, $sql_savedata);
-            $stmt->bind_param('ssssis', $fname, $sname, $email, $phone, $subject, $message);
+            $sql = $this->sql_list[$sql_name];
+            $stmt = mysqli_prepare($this->conn, $sql);
+            if(isset($this->param_list[$sql_name])){
+                $stmt->bind_param($this->param_list[$sql_name]["type_string"], ...array_values($this->param_list[$sql_name]["params"]));
+            }
             $stmt->execute();
             $returndata = $stmt->affected_rows;
         }
+        $stmt->close();
         return $returndata;
     }
     

@@ -4,5 +4,6 @@
 		<script src="js/cookies.js"></script>
 		<script src="js/showcontact.js"></script>
 		<script src="js/burgermenu.js"></script>
+		<script src="js/formhandler.js"></script>
 		<script src="owl/owl.carousel.min.js"></script>
 		<!-- end of external scripts -->
