@@ -35,6 +35,7 @@
 					</div>
 
 					<div class="form_container">
+						<div id="resultdiv"></div>
 						<form method="POST" action="?page=formhandler"  accept-charset="UTF-8" novalidate="novalidate">
 							<div class="row">
 								<div class="col">
