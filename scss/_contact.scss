@@ -82,6 +82,7 @@
 			
 			input[type="submit"]{
 				@extend %button;
+				box-sizing: border-box;
 				font-size: 17px;
 				line-height: 35px;
 				outline: none;
@@ -164,7 +165,9 @@
 			
 			.reqtext{
 				display: block;
-				margin-left: auto;
+				@media(min-width: 550px){
+					margin-left: auto;
+				}				
 				margin-top: auto;
 			}
 			
@@ -174,10 +177,18 @@
 			}
 				
 			&>.row1:last-child{
-				margin-top: 20px;
+				margin-top: 20px;				
+				@media(max-width: 550px){
+					flex-direction: column;
+				}
 				
 				&>.col{
 					margin-bottom: 0px;
+					&>div>span{
+						position: relative;
+						display: inline-block;
+						box-sizing: border-box;
+					}
 				}
 			}
 			
@@ -209,4 +220,45 @@
 			}
 		}
 	}
+}
+
+#resultdiv{
+	width: 100%;
+	background-color: white;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	
+	.msglabel{
+		display: block;
+	}
+}
+	
+.success{
+	padding: 5px 15px;
+	border: 1px solid #0f05;
+	box-shadow: inset 0px 0px 2px 1px #0f05;
+}
+
+.error{
+	padding: 5px 15px;
+	border: 1px solid #f005;
+	box-shadow: inset 0px 0px 2px 1px #f005;
+}
+
+.loading {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	top: 5px;
+	right: 5px;
+	border: 5px dotted #fff;
+	border-radius: 50%;
+	min-width: 35px;
+	min-height: 35px;
+	animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }

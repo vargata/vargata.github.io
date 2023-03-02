@@ -3746,6 +3746,7 @@
 }
 
 .contact_container .form_container > form input[type="submit"] {
+  box-sizing: border-box;
   font-size: 17px;
   line-height: 35px;
   outline: none;
@@ -3830,8 +3831,13 @@
 
 .contact_container .form_container > form .reqtext {
   display: block;
-  margin-left: auto;
   margin-top: auto;
+}
+
+@media (min-width: 550px) {
+  .contact_container .form_container > form .reqtext {
+    margin-left: auto;
+  }
 }
 
 .contact_container .form_container > form .reqtext::before {
@@ -3843,8 +3849,20 @@
   margin-top: 20px;
 }
 
+@media (max-width: 550px) {
+  .contact_container .form_container > form > .row1:last-child {
+    flex-direction: column;
+  }
+}
+
 .contact_container .form_container > form > .row1:last-child > .col {
   margin-bottom: 0px;
+}
+
+.contact_container .form_container > form > .row1:last-child > .col > div > span {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .contact_container .form_container > form > .row,
@@ -3873,6 +3891,51 @@
 @media (max-width: 990px) {
   .contact_container .form_container > form > .row {
     flex-direction: column;
+  }
+}
+
+#resultdiv {
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#resultdiv .msglabel {
+  display: block;
+}
+
+.success {
+  padding: 5px 15px;
+  border: 1px solid #0f05;
+  box-shadow: inset 0px 0px 2px 1px #0f05;
+}
+
+.error {
+  padding: 5px 15px;
+  border: 1px solid #f005;
+  box-shadow: inset 0px 0px 2px 1px #f005;
+}
+
+.loading {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  top: 5px;
+  right: 5px;
+  border: 5px dotted #fff;
+  border-radius: 50%;
+  min-width: 35px;
+  min-height: 35px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -4101,6 +4164,7 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   background-color: white;
+  scroll-behavior: smooth;
   z-index: 1;
 }
 

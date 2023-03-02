@@ -21,11 +21,13 @@ class db
     }
     
     function connect_db(){
-        //mysqli_report(MYSQLI_REPORT_OFF);
+        $ret = true;
+        mysqli_report(MYSQLI_REPORT_OFF);
         $this->conn = @mysqli_connect(self::db_host, self::db_user, self::db_pwd, self::db_name);
         if(!$this->conn){
-            echo "<label class='msglabel'>"."Connection error\nPlease try again later"."</label>".PHP_EOL;
+            $ret = false;
         }
+        return $ret;
     }
     
     function disconnect_db(){
@@ -68,6 +70,8 @@ class db
             }
             $stmt->execute();
             $returndata = $stmt->affected_rows;
+            if($returndata < 1)
+                $returndata = 0;
         }
         $stmt->close();
         return $returndata;

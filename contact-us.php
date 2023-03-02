@@ -36,11 +36,11 @@
 
 					<div class="form_container">
 						<div id="resultdiv"></div>
-						<form method="POST" action="?page=formhandler"  accept-charset="UTF-8" novalidate="novalidate">
+						<form method="POST" action="?page=formhandler"  accept-charset="UTF-8">
 							<div class="row">
 								<div class="col">
         							<label for="name" class="required">Your Name</label>
-        							<input name="name" type="text" value="" id="name">
+        							<input name="name" type="text" value="" id="name" required="required">
         						</div>
 								<div class="col">
         							<label for="company" class="">Company Name</label>
@@ -50,28 +50,28 @@
 							<div class="row">
 								<div class="col">
         							<label for="email" class="required">Your Email</label>
-        							<input name="email" type="text" value="" id="email">
+        							<input name="email" type="text" value="" id="email" required="required">
         						</div>
 								<div class="col">
         							<label for="phone" class="required">Your Telephone Number</label>
-        							<input name="phone" type="text" value="" id="telephone">
+        							<input name="phone" type="text" value="" id="phone" required="required">
         						</div>        							
 							</div>
 							<div class="row">
 								<div class="col">
         							<label for="subject" class="required">Subject</label>
-        							<input name="subject" type="text" id="subject">
+        							<input name="subject" type="text" id="subject" required="required">
         						</div>
 							</div>
 							<div class="row">
 								<div class="col">
-        							<label for="message" class="required">Message</label>
-        							<textarea name="message" cols="50" rows="10" id="message"></textarea>
+        							<label for="msg" class="required">Message</label>
+        							<textarea name="message" cols="50" rows="10" id="msg" required="required"></textarea>
         						</div>
 							</div>
 							<div class="row1">
 								<span>
-        							<input name="marketing" type="checkbox" value="1">
+        							<input name="marketing" type="checkbox" value="1" id="marketing">
         						</span>
         						<span>
         							<label for="marketing">Please tick this box if you wish to receive marketing information from us.
@@ -80,7 +80,7 @@
 							</div>
 							<div class="row1">
 								<div class="col">
-        							<input type="submit" name="submit" value="Send Enquiry">
+        							<div><span><input type="submit" name="submit" value="Send Enquiry" id="submit"><span></span></span></div>
         						</div>
 								<div class="col">
         							<span class="reqtext"><small>Fields Required</small></span>
