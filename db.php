@@ -4,6 +4,11 @@ class db
 {    
     private $conn;
     
+    /*const db_host = "138.68.136.139";
+    const db_name = "tamasvar_db_netmatters";
+    const db_user = "tamasvar_contact_user";
+    const db_pwd = "dU91Sc&Y0E5J";*/
+    
     const db_host = "localhost";
     const db_name = "db_netmatters";
     const db_user = "contact_user";

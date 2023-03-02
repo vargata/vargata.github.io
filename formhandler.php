@@ -43,7 +43,7 @@
     }
     
     $regex_digitonly = "/[^0-9]/";
-    $regex_phone = "/0[0-9]{10}/";
+    $regex_phone = "/^0[0-9]{10}$/";
     $phone = preg_replace($regex_digitonly, "", $phone, );
     if (!preg_match($regex_phone, $phone)){
         array_push($return, 'Need an 11 digit phone number starting with a 0.');
