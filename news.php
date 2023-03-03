@@ -1,17 +1,20 @@
 				<!-- News -->
-				<div class="news_container">		
+
+<?php
+    $counter = 1;
+    $db = new db();    
+    if($db->connect_db()){?>
+    
+    			<div class="news_container">		
 					<div class="news_header">
 						<h1>Latest News</h1>
 						<a href="#" class="visible_viewall">View All&nbsp;</a>
 					</div>
 
 <?php
-    $counter = 1;
-    $db = new db();    
-    $db->connect_db();
-    $db->add_query("getNews", "CALL getNews()");
-    $results = $db->get_Data("getNews");
-    foreach($results as $row){?>
+        $db->add_query("getNews", "CALL getNews()");
+        $results = $db->get_Data("getNews");
+        foreach($results as $row){?>
         
             		<div class="news_content<?php echo $counter; ?>">
 						<div class="img_header">
@@ -35,10 +38,15 @@
 					</div>
 
 <?php
-        $counter++;
-    }
-    $db->disconnect_db();
-?>
+            $counter++;
+        }
+        $db->disconnect_db();?>
+
 					<a href="#" class="hidden_viewall">View All&nbsp;</a>
 				</div>
+
+<?php
+    }
+?>
+
 				<!-- end of News -->
