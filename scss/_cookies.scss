@@ -20,7 +20,7 @@
 		letter-spacing: .6px;
 		line-height: 30px;
 		max-height: 90vh;
-		overflow-y: scroll;
+		overflow-y: auto;
 		
 		@media(min-width: 771px){			
 			width: 600px;

@@ -2,14 +2,14 @@
 				<div class="newsletter_container">
 					<div>
 						<h1>Email Newsletter Sign-Up</h1>
-						<form action="#" method="post">
+						<form action="#" method="post" onsubmit="return false;">
 							<section>
 								<div>
 									<label for="name">Your Name</label>
-									<input id="name" type="text" name="name" required="required"/>
+									<input id="name" type="text" name="name"/>
 								</div><div>
 									<label for="email">Your Email</label>
-									<input id="email" type="email" name="email" required="required"/>
+									<input id="email" type="email" name="email""/>
 								</div>
 							</section>
 							<section class="cb_container">

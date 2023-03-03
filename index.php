@@ -21,7 +21,7 @@
 <?php
 
 if(isset($_GET['page']))
-    include($_GET['page'] . '.php');
+    include("./" . $_GET['page'] . '.php');
 else
     include('landing.php');
 

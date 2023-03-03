@@ -42,12 +42,23 @@
         $return["success"] = false;
     }
     
-    $regex_digitonly = "/[^0-9]/";
-    $regex_phone = "/^0[0-9]{10}$/";
+    $regex_digitonly = "/[^0-9+]/";
+    $regex_short_phone = "/^0[0-9]{10}$/";
+    $regex_long_phone = "/^\\+44[0-9]{10}$/";
     $phone = preg_replace($regex_digitonly, "", $phone, );
-    if (!preg_match($regex_phone, $phone)){
-        array_push($return, 'Need an 11 digit phone number starting with a 0.');
+    if (!preg_match($regex_short_phone, $phone) && !preg_match($regex_long_phone, $phone)){
+        array_push($return, 'Not a valid phone number');
+        array_push($return, 'has to have a format of 0xxxxxxxxxx');
+        array_push($return, 'or +44xxxxxxxxxx');
         $return["success"] = false;
+    }
+
+    foreach ($_POST as $param){
+        if(strip_tags($param) != $param){
+            array_push($return, 'Caught you redhanded!!!');
+            array_push($return, htmlentities($param));
+            $return['success'] = false;
+        }
     }
 
 ?>
@@ -56,8 +67,8 @@
 
     if (!isset($return["success"])){
     
-        foreach($_POST as $name => $param){
-            $params[$name] = $param;
+        foreach($_POST as $name => $param){           
+            $params[$name] = htmlentities($param);
         }
         
         if(isset($_POST["marketing"]))

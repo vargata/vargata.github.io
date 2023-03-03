@@ -36,11 +36,11 @@
 
 					<div class="form_container">
 						<div id="resultdiv"></div>
-						<form method="POST" action="?page=formhandler"  accept-charset="UTF-8">
+						<form id="contact_form" method="POST" action="?page=formhandler"  accept-charset="UTF-8">
 							<div class="row">
 								<div class="col">
         							<label for="name" class="required">Your Name</label>
-        							<input name="name" type="text" value="" id="name" required="required">
+        							<input name="name" type="text" value="" id="name">
         						</div>
 								<div class="col">
         							<label for="company" class="">Company Name</label>
@@ -50,23 +50,23 @@
 							<div class="row">
 								<div class="col">
         							<label for="email" class="required">Your Email</label>
-        							<input name="email" type="text" value="" id="email" required="required">
+        							<input name="email" type="text" value="" id="email">
         						</div>
 								<div class="col">
         							<label for="phone" class="required">Your Telephone Number</label>
-        							<input name="phone" type="text" value="" id="phone" required="required">
+        							<input name="phone" type="text" value="" id="phone">
         						</div>        							
 							</div>
 							<div class="row">
 								<div class="col">
         							<label for="subject" class="required">Subject</label>
-        							<input name="subject" type="text" id="subject" required="required">
+        							<input name="subject" type="text" id="subject">
         						</div>
 							</div>
 							<div class="row">
 								<div class="col">
         							<label for="msg" class="required">Message</label>
-        							<textarea name="message" cols="50" rows="10" id="msg" required="required"></textarea>
+        							<textarea name="message" cols="50" rows="10" id="msg"></textarea>
         						</div>
 							</div>
 							<div class="row1">
