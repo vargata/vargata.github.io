@@ -9,17 +9,18 @@
 	font: inherit;
 	color: inherit;
 	text-transform: none;
-	background-color: #000;
+	background-color: #333645;
+	border-radius: 3px;
 	overflow: visible;
 	border: 0px;
 }
 
 .hamburger:hover {
-	opacity: 0.7;
+	background-color: darken(#333645, 10%);
 }
 
 .hamburger.is-active:hover {
-	opacity: 0.7;
+	background-color: darken(#333645, 10%);
 }
 
 .hamburger.is-active .hamburger-inner,

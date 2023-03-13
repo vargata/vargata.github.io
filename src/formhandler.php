@@ -71,6 +71,11 @@
             $params[$name] = htmlentities($param);
         }
         
+        if(isset($_POST["submit"])){
+            $trash = array_pop($params);
+            unset($trash);
+        }
+        
         if(isset($_POST["marketing"]))
             $marketing = array_pop($params);
         

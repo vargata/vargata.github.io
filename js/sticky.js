@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
 	});
 	
 	header.addEventListener('mouseleave', function(){	
-		if(wrapper.scrollTop > containerHeight) id = setTimeout(hideSticky, 3000);
+		if(wrapper.scrollTop > containerHeight) id = setTimeout(hideSticky, 2000);
 		mouseover = false;
 	});
 	
@@ -29,7 +29,7 @@ window.addEventListener('load', function() {
 		
 		if(lastScroll > scroll && scroll > containerHeight){
 			if(idPop) clearTimeout(idPop);
-			idPop = setTimeout(showSticky, 500);
+			idPop = setTimeout(showSticky, 100);
 		} else if (scroll <= containerHeight){
 			if(idPop) clearTimeout(idPop);
 		}
@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
 		lastScroll = scroll;
 		
 		if(id) clearTimeout(id);
-		if(scroll > containerHeight) id = setTimeout(hideSticky, 3000);
+		if(scroll > containerHeight) id = setTimeout(hideSticky, 2000);
 	});
 	
 	function showSticky(){

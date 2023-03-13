@@ -1,5 +1,5 @@
 <!-- Offices -->
-<?php include('offices.php'); ?>
+<?php include('./src/offices.php'); ?>
 <!-- end of Offices -->
 
 <!-- Contacts -->

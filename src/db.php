@@ -4,15 +4,15 @@ class db
 {    
     private $conn;
     
-    /*const db_host = "138.68.136.139";
-    const db_name = "tamasvar_db_netmatters";
-    const db_user = "tamasvar_contact_user";
-    const db_pwd = "dU91Sc&Y0E5J";*/
-    
     const db_host = "localhost";
     const db_name = "db_netmatters";
     const db_user = "contact_user";
     const db_pwd = "contactpwd";
+    
+    const db_host1 = "138.68.136.139";
+    const db_name1 = "tamasvar_db_netmatters";
+    const db_user1 = "tamasvar_contact_user";
+    const db_pwd1 = "dU91Sc&Y0E5J";
     
     private $sql_list = array();
     private $param_list = array();
@@ -28,7 +28,11 @@ class db
     function connect_db(){
         $ret = true;
         mysqli_report(MYSQLI_REPORT_OFF);
-        $this->conn = @mysqli_connect(self::db_host, self::db_user, self::db_pwd, self::db_name);
+        if($_SERVER['HTTP_HOST'] == "localhost")
+            $this->conn = @mysqli_connect(self::db_host, self::db_user, self::db_pwd, self::db_name);
+        else
+            $this->conn = @mysqli_connect(self::db_host1, self::db_user1, self::db_pwd1, self::db_name1);
+            
         if(!$this->conn){
             $ret = false;
         }
