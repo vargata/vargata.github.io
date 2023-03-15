@@ -1,4 +1,4 @@
-<?php require_once 'db.php';?>
+<?php require_once './src/db.php';?>
 
 <?php
 
@@ -45,7 +45,7 @@
     $regex_digitonly = "/[^0-9+]/";
     $regex_short_phone = "/^0[0-9]{10}$/";
     $regex_long_phone = "/^\\+44[0-9]{10}$/";
-    $phone = preg_replace($regex_digitonly, "", $phone, );
+    $phone = preg_replace($regex_digitonly, "", $phone);
     if (!preg_match($regex_short_phone, $phone) && !preg_match($regex_long_phone, $phone)){
         array_push($return, 'Not a valid phone number');
         array_push($return, 'has to have a format of 0xxxxxxxxxx');

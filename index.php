@@ -1,4 +1,4 @@
-<?php require_once './src/db.php';?>
+<?php require_once './src/db.php'; ?>
 
 <!doctype html>
 <html lang="en">
