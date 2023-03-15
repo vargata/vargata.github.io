@@ -1,5 +1,5 @@
 <?php
-    require_once 'db.php';
+    require_once './src/db.php';
 
     $db = new db();
     $db->connect_db();
