@@ -1,0 +1,49 @@
+.page{
+	width: 100%;
+	height: 100%;
+}
+
+.rightdiv {
+	position: absolute;
+	right: 20;
+}
+
+.lightswitch{
+	text-align: centre;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px #555555;
+}
+
+.lightswitch:hover{
+	text-align: centre;
+	width: 20px;
+	height: 20px;
+	background-color: #dddddd;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px #aaaaaa;
+}
+
+.darkswitch{
+	text-align: centre;
+	width: 20px;
+	height: 20px;
+	background-color: #000000;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px #555555;
+}
+
+.darkswitch:hover{
+	text-align: centre;
+	width: 20px;
+	height: 20px;
+	background-color: #888888;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px #aaaaaa;
+}

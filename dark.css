@@ -1,0 +1,127 @@
+body {
+	background-color: #666666;
+}
+
+.contentdiv {
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	background-color: #666666;
+	border: 1px solid #888888;
+	box-shadow: 2px 2px 3px 3px #777777 ;
+}
+
+.submitdiv{
+	width: 450px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.formhead{
+	color: #eeeeee;
+	padding: 0px 25px;
+	float: left;
+	font-size: 24px; 
+}
+
+.msglabel{
+	color: #eeeeee;
+	font-size: 16px; 
+}
+
+.charcount{
+	color: #eeeeee;
+	font-size: 16px;
+	float: left; 
+}
+
+select {
+	color: #eeeeee;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 100%;
+	background: #777777;
+	width: 450px;
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+select:hover{
+	background: #707077;
+}
+
+.grayOption{
+	color: #aaaaaa;
+	font-size: 100%;
+}
+
+.blackOption{
+	color: #ffffff;
+	font-size: 100%;
+}
+
+input{
+	color: #eeeeee;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 100%;
+	background: #777777;
+	width: 450px;
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+input:hover{
+	background: #707077;
+}
+
+::placeholder{
+	color: #aaaaaa;
+}
+
+::disabled {
+	background-color: #666666;
+}
+
+.error{
+	color: #ffaaaa;
+}
+
+textarea{
+	color: #eeeeee;
+	padding: 5px;
+	background: #777777;
+	width: 450px;
+	height: 200px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+	resize: none;
+	font-size: 18px;
+}
+
+textarea:hover{
+	background: #707077;
+}
+
+.submit{
+	color: #eeeeee;
+	margin-top: 20px;
+	background: #777777;
+	width: 150px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+.submit:hover{
+	background: #707077;
+}

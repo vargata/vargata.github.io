@@ -1,0 +1,127 @@
+body {
+	background-color: #eeeeee;
+}
+
+.contentdiv {
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	box-shadow: 2px 2px 3px 3px #dddddd ;
+}
+
+.submitdiv{
+	width: 450px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.formhead{
+	color: #111111;
+	padding: 0px 25px;
+	float: left;
+	font-size: 24px; 
+}
+
+.msglabel{
+	color: #111111;
+	font-size: 16px; 
+}
+
+.charcount{
+	color: #111111;
+	font-size: 16px;
+	float: left; 
+}
+
+select {
+	color: #111111;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 100%;
+	background: #ffffff;
+	width: 450px;
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+select:hover{
+	background: #f0f0ff;
+}
+
+.grayOption{
+	color: #aaaaaa;
+	font-size: 100%;
+}
+
+.blackOption{
+	color: #000000;
+	font-size: 100%;
+}
+
+input{
+	color: #111111;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 100%;
+	background: #ffffff;
+	width: 450px;
+	height: 30px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+input:hover{
+	background: #f0f0ff;
+}
+
+::placeholder{
+	color: #aaaaaa;
+}
+
+::disabled {
+	background-color: #eeeeee;
+}
+
+.error{
+	color: #ffaaaa;
+}
+
+textarea{
+	color: #111111;
+	padding: 5px;
+	background: #ffffff;
+	width: 450px;
+	height: 200px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+	resize: none;
+	font-size: 18px;
+}
+
+textarea:hover{
+	background: #f0f0ff;
+}
+
+.submit{
+	color: #111111;
+	margin-top: 20px;
+	background: #ffffff;
+	width: 150px;
+	cursor: pointer;
+	border: 1px solid #888888;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 2px #dddddd;
+}
+
+.submit:hover{
+	background: #f0f0ff;
+}

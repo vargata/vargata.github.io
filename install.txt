@@ -1,0 +1,17 @@
+Hi there
+
+So' I've done it to the best I can do now,
+I think I've done a fairly good job, though I'm also sure, with professional eyes it will have many flaws,
+tested on edge, chrome and opera.
+To make it work you need a
+database called db_contact
+with a user called contact_user
+who has a password contactpwd
+and has at least rights to select insert and execute on the database
+and for jquery it needs internet connection as its using google's libs
+
+I hope you will like it and we speak soon
+
+Kind Regards
+
+Tamas (Tom) Varga
